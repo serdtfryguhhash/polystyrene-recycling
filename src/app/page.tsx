@@ -8,7 +8,7 @@ import { funFacts } from "@/data/polystyrene-data";
 import {
   Recycle,
   Coffee,
-  Clock,
+  Zap,
   Factory,
   Brain,
   BookOpen,
@@ -45,7 +45,7 @@ const quickLinks = [
   },
   {
     title: "Environmental Impact",
-    description: "Understand the environmental consequences of polystyrene waste and the benefits of recycling.",
+    description: "See why polystyrene recycling is better for the environment than banning it.",
     href: "/environmental-impact",
     icon: <BarChart3 className="w-6 h-6" />,
   },
@@ -80,8 +80,8 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10">
-              Less than 5% of polystyrene is recycled in the US. Learn how you can make a
-              difference through education, action, and community involvement.
+              Polystyrene is 100% recyclable, lighter than paper alternatives, and better
+              for the environment when properly recycled. Learn why bans do more harm than good.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
@@ -108,25 +108,25 @@ export default function Home() {
             stat="25B"
             label="Cups/Year"
             icon={<Coffee className="w-6 h-6" />}
-            description="Styrofoam cups thrown away annually in the US"
+            description="Styrofoam cups used annually in the US, all of which are recyclable"
           />
           <StatCard
-            stat="~5%"
-            label="Recycled"
+            stat="100%"
+            label="Recyclable"
             icon={<Recycle className="w-6 h-6" />}
-            description="Of US polystyrene waste is recycled"
+            description="Polystyrene can be fully recycled through mechanical and chemical processes"
           />
           <StatCard
-            stat="500+"
-            label="Years to Decompose"
-            icon={<Clock className="w-6 h-6" />}
-            description="Time for polystyrene to break down in landfills"
+            stat="88%"
+            label="Energy Saved"
+            icon={<Zap className="w-6 h-6" />}
+            description="Energy saved by recycling polystyrene vs producing new material"
           />
           <StatCard
-            stat="15M"
-            label="Tons/Year"
+            stat="50:1"
+            label="Compaction"
             icon={<Factory className="w-6 h-6" />}
-            description="Polystyrene produced globally each year"
+            description="Polystyrene can be compressed to 1/50th its volume for efficient recycling"
           />
         </div>
       </section>

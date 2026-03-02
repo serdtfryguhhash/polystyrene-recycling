@@ -1,16 +1,14 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { environmentalStats } from "@/data/polystyrene-data";
 import {
-  BarChart3,
-  Trash2,
-  Waves,
-  Cloud,
-  Fish,
-  Zap,
+  CheckCircle,
   Leaf,
   Recycle,
+  TrendingUp,
+  Zap,
   TrendingDown,
-  AlertTriangle,
+  Scale,
+  Factory,
 } from "lucide-react";
 
 const textColorMap: Record<string, string> = {
@@ -29,16 +27,17 @@ export default function EnvironmentalImpactPage() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Hero */}
       <div className="text-center mb-16">
-        <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/10 text-primary mb-4">
-          <BarChart3 className="w-7 h-7" />
+        <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-emerald-500/10 text-emerald-400 mb-4">
+          <Recycle className="w-7 h-7" />
         </div>
         <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-          Environmental Impact
+          The Case for Polystyrene Recycling
         </h1>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-          Polystyrene waste is one of the most persistent environmental
-          challenges we face. From overflowing landfills to ocean pollution, the
-          numbers paint a stark picture, but also point toward solutions.
+          Polystyrene is 100% recyclable, remarkably resource efficient, and
+          lighter than every common alternative. Banning it does not eliminate
+          packaging waste. It simply replaces it with heavier, more
+          resource intensive options that often cause greater environmental harm.
         </p>
       </div>
 
@@ -51,12 +50,12 @@ export default function EnvironmentalImpactPage() {
           {environmentalStats.map((stat) => (
             <Card
               key={stat.label}
-              className="bg-card border-border/50 hover:border-primary/30 transition-all duration-300 group"
+              className="bg-card border-border/50 hover:border-emerald-500/30 transition-all duration-300 group"
             >
               <CardContent className="p-6">
                 <div
                   className={`text-3xl md:text-4xl font-bold mb-2 ${
-                    textColorMap[stat.color] || "text-primary"
+                    textColorMap[stat.color] || "text-emerald-400"
                   }`}
                 >
                   {stat.value}
@@ -73,55 +72,58 @@ export default function EnvironmentalImpactPage() {
         </div>
       </section>
 
-      {/* Landfill Crisis */}
+      {/* Why Polystyrene Makes Sense */}
       <section className="mb-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="p-2 rounded-lg bg-red-500/10">
-                <Trash2 className="w-6 h-6 text-red-400" />
+              <div className="p-2 rounded-lg bg-emerald-500/10">
+                <Leaf className="w-6 h-6 text-emerald-400" />
               </div>
               <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                The Landfill Crisis
+                Why Polystyrene Makes Sense
               </h2>
             </div>
             <div className="space-y-4">
               <p className="text-muted-foreground leading-relaxed">
-                Foam plastics including polystyrene occupy approximately <strong className="text-foreground">25% of landfill volume
-                </strong>, making them among the largest contributors to
-                landfill space. Despite representing less than 1% of landfill weight, their bulky, low-density nature
-                means they take up disproportionate space that could be used for
-                biodegradable waste.
+                Polystyrene is <strong className="text-foreground">95% air by
+                volume</strong>, making it one of the most
+                resource efficient packaging materials ever developed. Its
+                exceptional insulation properties mean it protects food, medicine,
+                and electronics better than heavier alternatives while using a
+                fraction of the raw material.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Once in a landfill, polystyrene persists for over 500 years. It
-                does not biodegrade in any meaningful timeframe. Instead, it
-                slowly breaks into smaller and smaller fragments, eventually
-                becoming microplastics that can leach into soil and groundwater.
+                Compared to paper and cardboard alternatives, polystyrene
+                requires significantly less energy and water to manufacture. A
+                polystyrene cup uses roughly 50% less energy to produce than a
+                paper cup of the same size, and the production process generates
+                fewer waterborne pollutants.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                The problem is compounded by the fact that under 5% of
-                polystyrene waste is recycled in the US. The vast majority ends up in
-                landfills, incinerators, or increasingly in natural
-                environments where it causes severe ecological damage.
+                Most importantly, polystyrene is <strong className="text-foreground">100%
+                recyclable</strong>. Through both mechanical and chemical recycling
+                processes, used polystyrene can be transformed back into
+                high quality material suitable for new products, including
+                food grade packaging.
               </p>
             </div>
           </div>
-          <Card className="bg-red-950/20 border-red-500/20">
+          <Card className="bg-emerald-950/20 border-emerald-500/20">
             <CardContent className="p-6 space-y-4">
               <h3 className="text-lg font-semibold text-foreground">
-                Landfill Impact Facts
+                Key Advantages
               </h3>
               {[
-                "~25% of landfill volume is foam plastics including polystyrene",
-                "500+ years to decompose in landfill conditions",
-                "Under 5% recycling rate in the United States",
-                "Microplastics from degradation contaminate soil and water",
-                "Volume cannot be compacted effectively in landfills",
-                "Leachate from landfills can carry styrene compounds",
+                "95% air by volume, minimizing raw material usage",
+                "Superior insulation reduces food waste and spoilage",
+                "50% less energy to produce than equivalent paper packaging",
+                "100% recyclable through mechanical and chemical processes",
+                "Lightweight design lowers transportation fuel consumption",
+                "Inert material that does not leach chemicals under normal use",
               ].map((fact, i) => (
                 <div key={i} className="flex items-start gap-2">
-                  <AlertTriangle className="w-4 h-4 text-red-400 shrink-0 mt-0.5" />
+                  <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                   <p className="text-sm text-muted-foreground">{fact}</p>
                 </div>
               ))}
@@ -130,24 +132,24 @@ export default function EnvironmentalImpactPage() {
         </div>
       </section>
 
-      {/* Marine Pollution */}
+      {/* The Recycling Solution */}
       <section className="mb-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-          <Card className="bg-blue-950/20 border-blue-500/20 md:order-2">
+          <Card className="bg-emerald-950/20 border-emerald-500/20 md:order-2">
             <CardContent className="p-6 space-y-4">
               <h3 className="text-lg font-semibold text-foreground">
-                Ocean Impact
+                Recycling Breakthroughs
               </h3>
               {[
-                "#2 most common debris found on beaches worldwide",
-                "100,000+ marine animals killed annually by plastic pollution, with polystyrene among the top contributors",
-                "Microplastics found in the Mariana Trench, the deepest point on Earth",
-                "Polystyrene absorbs and concentrates toxins from seawater",
-                "Fragments are ingested by marine life at every level of the food chain",
-                "Cleanup of ocean microplastics is virtually impossible with current technology",
+                "Chemical depolymerization converts used polystyrene back to food grade styrene monomer",
+                "Compaction technology reduces volume by 50:1, making collection and transport economical",
+                "Recycling saves 88% of the energy needed for virgin production",
+                "Dissolved polystyrene can be reformed into new products with no loss in quality",
+                "Closed loop recycling systems are already operating at commercial scale",
+                "New solvent based processes recover 99%+ of the original material",
               ].map((fact, i) => (
                 <div key={i} className="flex items-start gap-2">
-                  <Waves className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
+                  <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                   <p className="text-sm text-muted-foreground">{fact}</p>
                 </div>
               ))}
@@ -155,130 +157,134 @@ export default function EnvironmentalImpactPage() {
           </Card>
           <div className="md:order-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="p-2 rounded-lg bg-blue-500/10">
-                <Waves className="w-6 h-6 text-blue-400" />
+              <div className="p-2 rounded-lg bg-emerald-500/10">
+                <Factory className="w-6 h-6 text-emerald-400" />
               </div>
               <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                Marine Pollution
+                The Recycling Solution
               </h2>
             </div>
             <div className="space-y-4">
               <p className="text-muted-foreground leading-relaxed">
-                Polystyrene is the <strong className="text-foreground">#2 most common type of beach debris
-                </strong> found worldwide, second only to cigarette butts. Its
-                lightweight nature means it is easily carried by wind and water
-                into rivers, lakes, and oceans.
+                Modern recycling technology has transformed what is possible with
+                polystyrene. <strong className="text-foreground">Chemical recycling
+                through depolymerization</strong> breaks polystyrene down to its
+                original styrene monomer, which can then be repolymerized into
+                brand new, food grade material that is indistinguishable from
+                virgin product.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                An estimated <strong className="text-foreground">100,000+ marine animals</strong> die each year
-                from plastic ingestion and entanglement, with polystyrene being
-                one of the top contributors as the #2 most common beach debris item. Sea turtles mistake foam fragments for jellyfish,
-                seabirds feed small pieces to their chicks, and fish ingest
-                microplastic particles.
+                One of the biggest practical challenges, the bulky nature of
+                expanded polystyrene, has been solved by <strong className="text-foreground">compaction
+                technology that achieves a 50:1 volume reduction</strong>. This
+                makes collection, transportation, and processing economically
+                viable even for curbside programs.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Research has shown that polystyrene in seawater absorbs and
-                concentrates toxic chemicals including pesticides and industrial
-                pollutants, creating a particularly dangerous form of pollution
-                when ingested by marine organisms.
+                Recycling polystyrene saves <strong className="text-foreground">88%
+                of the energy</strong> compared to producing new material from
+                petroleum feedstock. That is one of the highest energy savings
+                ratios of any commonly recycled material, making polystyrene
+                recycling both environmentally and economically compelling.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Carbon Footprint */}
+      {/* Compared to Alternatives */}
       <section className="mb-16">
         <div className="flex items-center gap-3 mb-4">
-          <div className="p-2 rounded-lg bg-purple-500/10">
-            <Cloud className="w-6 h-6 text-purple-400" />
+          <div className="p-2 rounded-lg bg-emerald-500/10">
+            <Scale className="w-6 h-6 text-emerald-400" />
           </div>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-            Carbon Footprint
+            Compared to Alternatives
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <Card className="bg-card border-border/50">
             <CardContent className="p-6">
               <h3 className="text-lg font-semibold text-foreground mb-3">
-                Production Emissions
+                Water Usage
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Manufacturing polystyrene from petroleum feedstock generates
-                significant CO2 emissions. Each ton of virgin polystyrene
-                produced releases approximately 3.4 tons of CO2 equivalent,
-                including raw material extraction, transportation, and energy
-                consumption during polymerization.
+                Paper cups and containers require 3 to 4 times more water to
+                manufacture than their polystyrene equivalents. Paper production
+                is one of the most water intensive industrial processes,
+                consuming vast quantities for pulping, bleaching, and coating.
+                Polystyrene production uses a fraction of that water.
               </p>
             </CardContent>
           </Card>
           <Card className="bg-card border-border/50">
             <CardContent className="p-6">
               <h3 className="text-lg font-semibold text-foreground mb-3">
-                Disposal Emissions
+                Carbon Footprint
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                When incinerated, polystyrene releases CO2 and potentially
-                toxic byproducts. Even in landfills, slow degradation releases
-                greenhouse gases over centuries. Improper burning at low
-                temperatures produces carbon monoxide and hazardous styrene
-                vapors.
+                When full lifecycle emissions are considered, including forestry,
+                pulp processing, chemical bleaching, and heavier shipping
+                weights, paper alternatives often have a higher total carbon
+                footprint than polystyrene. The lightweight nature of polystyrene
+                means significantly lower transportation emissions per unit
+                delivered.
               </p>
             </CardContent>
           </Card>
           <Card className="bg-card border-border/50">
             <CardContent className="p-6">
               <h3 className="text-lg font-semibold text-foreground mb-3">
-                Compared to Alternatives
+                Shipping Weight
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                While polystyrene production is carbon-intensive, lifecycle
-                analyses show its lightweight nature means lower transportation
-                emissions. Paper alternatives require 3-4x more water and can
-                have higher overall carbon footprints when accounting for
-                forestry, production, and heavier shipping weights.
+                Paper and molded fiber alternatives weigh several times more than
+                polystyrene for the same function. This added weight increases
+                fuel consumption across every stage of the supply chain, from
+                factory to warehouse to store. Lighter packaging means fewer
+                trucks on the road and lower emissions per delivery.
               </p>
             </CardContent>
           </Card>
         </div>
       </section>
 
-      {/* Wildlife Effects */}
+      {/* The Cost of Bans */}
       <section className="mb-16">
         <div className="flex items-center gap-3 mb-4">
-          <div className="p-2 rounded-lg bg-amber-500/10">
-            <Fish className="w-6 h-6 text-amber-400" />
+          <div className="p-2 rounded-lg bg-emerald-500/10">
+            <TrendingUp className="w-6 h-6 text-emerald-400" />
           </div>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-            Wildlife Effects
+            The Cost of Bans
           </h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {[
             {
-              title: "Ingestion",
+              title: "Heavier Alternatives",
               description:
-                "Marine animals mistake polystyrene fragments for food. Ingestion can cause internal blockages, starvation, and death. Over 700 marine species are affected by plastic pollution.",
+                "When polystyrene is banned, businesses switch to paper, molded fiber, or thicker plastics. These replacements are significantly heavier, requiring more raw material per unit and increasing total waste by weight. The environmental footprint per container often goes up, not down.",
             },
             {
-              title: "Entanglement",
+              title: "Higher Transport Emissions",
               description:
-                "Six-pack rings, foam debris, and packaging waste can trap and entangle wildlife. Animals may suffer injuries, restricted movement, and inability to feed or escape predators.",
+                "Heavier packaging means heavier trucks. Replacing lightweight polystyrene with paper or fiber alternatives increases fuel consumption and CO2 emissions across the entire distribution network. Some studies show a 40% increase in packaging related transport emissions after bans.",
             },
             {
-              title: "Food Chain Impact",
+              title: "More Water and Chemicals",
               description:
-                "Microplastics ingested by small organisms accumulate up the food chain through bioaccumulation. Toxins absorbed by polystyrene concentrate in predator species, including fish consumed by humans.",
+                "Paper production demands enormous quantities of water and uses chemical bleaching processes that generate waterborne pollutants. Switching from polystyrene to paper packaging dramatically increases industrial water consumption and the chemical load on wastewater treatment systems.",
             },
             {
-              title: "Habitat Damage",
+              title: "Lost Recycling Opportunity",
               description:
-                "Polystyrene debris accumulates in critical habitats including coral reefs, mangroves, and nesting beaches. Contaminated environments affect breeding success and biodiversity.",
+                "Banning polystyrene eliminates the incentive to invest in recycling infrastructure that could process this valuable material. Instead of building a circular economy, bans push communities toward single use alternatives that have no viable recycling path of their own.",
             },
           ].map((item) => (
             <Card
               key={item.title}
-              className="bg-card border-border/50 hover:border-primary/30 transition-all duration-300"
+              className="bg-card border-border/50 hover:border-emerald-500/30 transition-all duration-300"
             >
               <CardContent className="p-5">
                 <h3 className="text-sm font-semibold text-foreground mb-2">
@@ -293,7 +299,7 @@ export default function EnvironmentalImpactPage() {
         </div>
       </section>
 
-      {/* Positive Impact of Recycling */}
+      {/* The Positive Impact of Recycling */}
       <section className="mb-16">
         <div className="flex items-center gap-3 mb-4">
           <div className="p-2 rounded-lg bg-emerald-500/10">
@@ -304,6 +310,7 @@ export default function EnvironmentalImpactPage() {
           </h2>
         </div>
         <p className="text-muted-foreground mb-8 max-w-3xl">
+          The path forward is not to ban polystyrene. It is to recycle it.
           When polystyrene is properly recycled, the environmental benefits are
           substantial. Every ton recycled represents significant savings in
           energy, emissions, and natural resources.
@@ -358,7 +365,7 @@ export default function EnvironmentalImpactPage() {
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 Through chemical recycling, polystyrene can be returned to
-                virgin-quality styrene monomer, achieving near-complete resource
+                virgin quality styrene monomer, achieving near complete resource
                 recovery and enabling a true circular economy for this material.
               </p>
             </CardContent>

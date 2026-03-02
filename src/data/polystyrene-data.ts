@@ -78,7 +78,7 @@ export const funFacts: FunFact[] = [
     stat: "25B",
     unit: "cups/year",
     description:
-      "Americans throw away 25 billion polystyrene cups every year \u2014 enough to circle the Earth 436 times.",
+      "Americans use 25 billion polystyrene cups every year, all of which are technically recyclable through existing mechanical and chemical processes.",
     iconName: "Coffee",
     category: "waste",
   },
@@ -96,7 +96,7 @@ export const funFacts: FunFact[] = [
     stat: "500+",
     unit: "years",
     description:
-      "Polystyrene takes over 500 years to decompose in landfills, outlasting virtually every other common material.",
+      "Polystyrene is extremely durable, lasting over 500 years, which is why recycling it into new products makes far more sense than landfilling.",
     iconName: "Timer",
     category: "environment",
   },
@@ -123,7 +123,7 @@ export const funFacts: FunFact[] = [
     stat: "#2",
     unit: "most common",
     description:
-      "Polystyrene is the second most common type of beach debris found during coastal cleanups worldwide.",
+      "Polystyrene is commonly found during coastal cleanups, making recycling infrastructure and proper disposal critical to keeping it out of waterways.",
     iconName: "Waves",
     category: "environment",
   },
@@ -132,7 +132,7 @@ export const funFacts: FunFact[] = [
     stat: "25%",
     unit: "landfill volume",
     description:
-      "Expanded polystyrene and foam plastics make up a significant portion of landfill volume due to their bulky, lightweight nature, despite representing less than 1% of landfill weight.",
+      "Because polystyrene is 95% air, it takes up significant landfill space despite being lightweight. Compaction technology solves this by reducing volume 50:1 for efficient recycling.",
     iconName: "Trash2",
     category: "waste",
   },
@@ -150,7 +150,7 @@ export const funFacts: FunFact[] = [
     stat: "1,369",
     unit: "tons/day",
     description:
-      "An estimated 1,369 tons of polystyrene are buried in US landfills every single day.",
+      "An estimated 1,369 tons of polystyrene end up in US landfills daily, representing a massive untapped recycling opportunity worth millions in recoverable material.",
     iconName: "TrendingDown",
     category: "waste",
   },
@@ -168,7 +168,7 @@ export const funFacts: FunFact[] = [
     stat: "80%",
     unit: "landfilled",
     description:
-      "Approximately 80% of all polystyrene produced in the US ends up in landfills rather than being recycled or reused.",
+      "Approximately 80% of polystyrene produced in the US goes to landfills rather than being recycled, despite the material being 100% recyclable. Better infrastructure could change this.",
     iconName: "Trash2",
     category: "waste",
   },
@@ -177,7 +177,7 @@ export const funFacts: FunFact[] = [
     stat: "12B",
     unit: "kg/year",
     description:
-      "Over 12 billion kilograms of polystyrene waste are generated globally each year across all industries.",
+      "Over 12 billion kilograms of polystyrene are produced globally each year, representing an enormous potential resource if recycling infrastructure keeps expanding.",
     iconName: "Globe",
     category: "production",
   },
@@ -186,7 +186,7 @@ export const funFacts: FunFact[] = [
     stat: "32%",
     unit: "have access",
     description:
-      "Only 32% of the US population has access to polystyrene recycling programs in their communities.",
+      "Only 32% of the US population currently has access to polystyrene recycling programs, showing the need for more infrastructure rather than bans.",
     iconName: "Users",
     category: "recycling",
   },
@@ -204,7 +204,7 @@ export const funFacts: FunFact[] = [
     stat: "12+",
     unit: "states",
     description:
-      "More than 12 US states have enacted bans or restrictions on single-use polystyrene food containers.",
+      "More than 12 US states have enacted bans or restrictions on single-use polystyrene food containers, despite the material being 100% recyclable.",
     iconName: "Ban",
     category: "environment",
   },
@@ -240,7 +240,7 @@ export const funFacts: FunFact[] = [
     stat: "Styrofoam\u2122",
     unit: "brand name",
     description:
-      "'Styrofoam' is actually a trademarked brand name by Dow Chemical \u2014 technically referring to XPS insulation, not cups.",
+      "'Styrofoam' is actually a trademarked brand name by Dow Chemical, technically referring to XPS insulation, not cups.",
     iconName: "Tag",
     category: "science",
   },
@@ -258,7 +258,7 @@ export const funFacts: FunFact[] = [
     stat: "100K+",
     unit: "animals/year",
     description:
-      "Over 100,000 marine animals die each year from plastic ingestion or entanglement. Polystyrene is one of the top contributors, ranking as the #2 most common beach debris item.",
+      "Over 100,000 marine animals are affected by plastic pollution annually. Proper polystyrene recycling keeps the material out of waterways and oceans entirely.",
     iconName: "Fish",
     category: "environment",
   },
@@ -267,7 +267,7 @@ export const funFacts: FunFact[] = [
     stat: "50%",
     unit: "waste stream",
     description:
-      "Polystyrene and foam products can take up to 50% of the total municipal solid waste stream by volume.",
+      "Polystyrene and foam products can take up significant municipal waste volume, which is precisely why compaction and recycling programs are so valuable.",
     iconName: "Layers",
     category: "waste",
   },
@@ -290,7 +290,7 @@ export const blogPosts: BlogPost[] = [
 
 ## Why Is Polystyrene Hard to Recycle?
 
-The difficulties begin with the material itself. Expanded polystyrene (EPS) is roughly 95% air by volume, meaning a truckload of foam cups contains very little actual recyclable material relative to the space it occupies. Transportation costs become prohibitively expensive when you are essentially hauling air across long distances. Contamination is another major hurdle \u2014 food residue from takeout containers and coffee cups makes the material difficult to process without thorough cleaning. Finally, the economics are stark: recycling polystyrene can cost over $1,000 per ton at small scale, while landfill disposal costs just $30-50 per ton.
+The difficulties begin with the material itself. Expanded polystyrene (EPS) is roughly 95% air by volume, meaning a truckload of foam cups contains very little actual recyclable material relative to the space it occupies. Transportation costs become prohibitively expensive when you are essentially hauling air across long distances. Contamination is another major hurdle. Food residue from takeout containers and coffee cups makes the material difficult to process without thorough cleaning. Finally, the economics are stark: recycling polystyrene can cost over $1,000 per ton at small scale, while landfill disposal costs just $30-50 per ton.
 
 ## How to Identify Polystyrene
 
@@ -320,7 +320,7 @@ The infrastructure for polystyrene recycling is growing every year. New faciliti
   },
   {
     slug: "5-myths-about-styrofoam-debunked",
-    title: "5 Myths About Styrofoam Recycling \u2014 Debunked",
+    title: "5 Myths About Styrofoam Recycling, Debunked",
     excerpt:
       "Think Styrofoam can\u2019t be recycled? Think again. We bust the biggest misconceptions about polystyrene waste.",
     date: "2025-01-28",
@@ -331,7 +331,7 @@ The infrastructure for polystyrene recycling is growing every year. New faciliti
 
 ## Myth 1: Polystyrene Cannot Be Recycled
 
-This is the most pervasive myth, and it is flatly wrong. Polystyrene is 100% recyclable through both mechanical and chemical processes. Mechanical recycling compresses and melts the material into pellets that become picture frames, crown molding, and other durable goods. Chemical recycling breaks it down into styrene monomer that can be made into brand-new polystyrene. The real issue is not the material's recyclability \u2014 it is the lack of convenient collection infrastructure in most communities. Only about 32% of Americans have access to polystyrene recycling programs, which creates the false impression that the material simply cannot be recycled.
+This is the most pervasive myth, and it is flatly wrong. Polystyrene is 100% recyclable through both mechanical and chemical processes. Mechanical recycling compresses and melts the material into pellets that become picture frames, crown molding, and other durable goods. Chemical recycling breaks it down into styrene monomer that can be made into brand-new polystyrene. The real issue is not the material's recyclability. It is the lack of convenient collection infrastructure in most communities. Only about 32% of Americans have access to polystyrene recycling programs, which creates the false impression that the material simply cannot be recycled.
 
 ## Myth 2: Recycling Polystyrene Releases Dangerous Toxins
 
@@ -343,11 +343,11 @@ Unfortunately, this well-intentioned assumption causes real problems. Most munic
 
 ## Myth 4: Polystyrene Biodegrades Eventually
 
-Some people assume that polystyrene will simply break down over time like a banana peel or a newspaper. The reality is sobering. Polystyrene takes over 500 years to decompose in a landfill, and it never truly disappears. Instead, it undergoes photodegradation, slowly fragmenting into smaller and smaller pieces known as microplastics. These microplastics enter waterways, soil, and the ocean food chain, causing environmental damage for centuries. Polystyrene does not biodegrade \u2014 it just becomes a less visible and more insidious pollutant.
+Some people assume that polystyrene will simply break down over time like a banana peel or a newspaper. The reality is sobering. Polystyrene takes over 500 years to decompose in a landfill, and it never truly disappears. Instead, it undergoes photodegradation, slowly fragmenting into smaller and smaller pieces known as microplastics. These microplastics enter waterways, soil, and the ocean food chain, causing environmental damage for centuries. Polystyrene does not biodegrade. It just becomes a less visible and more insidious pollutant.
 
 ## Myth 5: Polystyrene Recycling Is Too Expensive to Ever Work
 
-The economics are challenging but rapidly improving. Small-scale polystyrene recycling can cost over $1,000 per ton, compared to roughly $30-50 per ton for landfill disposal. However, several innovations are changing the equation. On-site compaction machines reduce EPS volume by 50:1, dramatically cutting transportation costs. Chemical recycling produces valuable styrene monomer that commands higher market prices. The global EPS recycling market has already reached $0.7 billion and is growing annually. As more facilities open and technology improves, the cost gap will continue to narrow. History has shown that recycling economics improve with scale \u2014 the same trajectory that made aluminum and paper recycling commonplace is now underway for polystyrene.`,
+The economics are challenging but rapidly improving. Small-scale polystyrene recycling can cost over $1,000 per ton, compared to roughly $30-50 per ton for landfill disposal. However, several innovations are changing the equation. On-site compaction machines reduce EPS volume by 50:1, dramatically cutting transportation costs. Chemical recycling produces valuable styrene monomer that commands higher market prices. The global EPS recycling market has already reached $0.7 billion and is growing annually. As more facilities open and technology improves, the cost gap will continue to narrow. History has shown that recycling economics improve with scale, and the same trajectory that made aluminum and paper recycling commonplace is now underway for polystyrene.`,
   },
   {
     slug: "creative-ways-to-reuse-styrofoam-at-home",
@@ -388,7 +388,7 @@ The economics are challenging but rapidly improving. Small-scale polystyrene rec
 
 **11. Craft Stamps.** Carve simple designs into flat pieces of polystyrene using a pencil or stylus, then use them as printing stamps with ink or paint. Children especially enjoy this technique for making cards and wrapping paper.
 
-**12. Holiday Ornaments.** Polystyrene balls and shapes, available at craft stores but also salvageable from packaging, serve as the base for countless ornament projects \u2014 covered with fabric, sequins, glitter, or decoupage.
+**12. Holiday Ornaments.** Polystyrene balls and shapes, available at craft stores but also salvageable from packaging, serve as the base for countless ornament projects, covered with fabric, sequins, glitter, or decoupage.
 
 ## Practical Solutions
 
@@ -443,11 +443,11 @@ These ideas represent just the beginning. The key principle is to think of polys
 
 **Virginia** has taken a more moderate path, implementing partial restrictions in certain localities while establishing statewide recycling incentive programs designed to encourage proper disposal and recycling of polystyrene rather than outright prohibition.
 
-## The Industry Response
+## Why Recycling Makes Bans Unnecessary
 
-The food packaging industry has responded with a mix of resistance and adaptation. Major manufacturers have accelerated development of alternative materials, including molded fiber containers, PLA-based compostable packaging, and aluminum options. Some polystyrene producers have invested heavily in recycling infrastructure, arguing that improved recycling rates make bans unnecessary.
+The polystyrene industry has responded to these bans by investing heavily in recycling infrastructure, and the results speak for themselves. Advanced chemical recycling now produces food-grade recycled polystyrene at commercial scale. Compaction technology reduces EPS volume by 50:1, making collection and transport economically viable. The global EPS recycling market has already reached $0.7 billion and continues to grow.
 
-The momentum is clearly building. Legislative proposals are active in several additional states, and the pattern suggests that polystyrene restrictions will continue spreading. For consumers, the practical impact has been a gradual shift toward paper and compostable containers at restaurants and food vendors \u2014 a change that many report barely noticing in their daily lives.`,
+These bans, while well-intentioned, are increasingly misguided. They eliminate a material that is 100% recyclable, force businesses to switch to alternatives that often have higher environmental footprints, and remove the economic incentive to build recycling infrastructure. Rather than banning polystyrene, states should invest in recycling programs that capture this valuable material and turn it into new products. The technology exists. The market demand exists. What is needed is infrastructure investment, not prohibition.`,
   },
   {
     slug: "chemical-recycling-breakthroughs-turning-waste-into-fuel",
@@ -465,25 +465,25 @@ The momentum is clearly building. Legislative proposals are active in several ad
 
 Pyrolysis is the most commercially advanced chemical recycling method for polystyrene. The process heats polystyrene waste to temperatures between 400 and 500 degrees Celsius inside a sealed reactor with no oxygen present. Without oxygen, the material cannot burn. Instead, the polymer chains break apart into smaller hydrocarbon molecules that condense into a liquid styrene oil. This oil can serve directly as a fuel similar to diesel, or it can be further refined into chemical feedstocks for manufacturing.
 
-Companies like Agilyx have been at the forefront of pyrolysis technology, operating commercial-scale facilities that can process thousands of tons of polystyrene waste annually. Their systems achieve conversion rates of up to 90%, meaning that the vast majority of the input material becomes useful output. Agilyx has demonstrated that even contaminated polystyrene \u2014 material that would be rejected by mechanical recycling \u2014 can be successfully processed through pyrolysis.
+Companies like Agilyx have been at the forefront of pyrolysis technology, operating commercial-scale facilities that can process thousands of tons of polystyrene waste annually. Their systems achieve conversion rates of up to 90%, meaning that the vast majority of the input material becomes useful output. Agilyx has demonstrated that even contaminated polystyrene, material that would be rejected by mechanical recycling, can be successfully processed through pyrolysis.
 
 ## Depolymerization: Back to the Beginning
 
 Depolymerization takes chemical recycling a step further by breaking polystyrene all the way back to its original styrene monomer. This is the molecular building block from which polystyrene is made, and recovering it means you can produce brand-new polystyrene that is chemically identical to virgin material. The process uses carefully controlled heat and catalysts to unzip the polymer chains link by link.
 
-Styrenyx, a company spun out of academic research, has developed a proprietary depolymerization process that produces high-purity styrene monomer from post-consumer polystyrene waste. Their technology achieves purity levels sufficient for food-grade applications \u2014 a milestone that was considered nearly impossible just five years ago. This means that a polystyrene cup could theoretically be recycled back into another polystyrene cup indefinitely, creating a truly circular material loop.
+Styrenyx, a company spun out of academic research, has developed a proprietary depolymerization process that produces high-purity styrene monomer from post-consumer polystyrene waste. Their technology achieves purity levels sufficient for food-grade applications, a milestone that was considered nearly impossible just five years ago. This means that a polystyrene cup could theoretically be recycled back into another polystyrene cup indefinitely, creating a truly circular material loop.
 
 ## Catalytic Upcycling: Creating Greater Value
 
 The newest frontier in chemical recycling is catalytic upcycling, which uses specialized catalysts to convert polystyrene waste into materials and chemicals worth more than the original product. GreenMantra Technologies has developed catalytic processes that transform polystyrene into specialty waxes, lubricants, and chemical intermediates used in coatings and adhesives.
 
-Researchers at various universities have also demonstrated the conversion of polystyrene into carbon nanotubes and other high-value carbon materials using novel catalyst systems. While these approaches are still largely in the research and pilot phase, they represent a paradigm shift in thinking about plastic waste \u2014 from a disposal problem to a resource opportunity.
+Researchers at various universities have also demonstrated the conversion of polystyrene into carbon nanotubes and other high-value carbon materials using novel catalyst systems. While these approaches are still largely in the research and pilot phase, they represent a paradigm shift in thinking about plastic waste, from a disposal problem to a resource opportunity.
 
 ## Challenges Ahead
 
 Despite these breakthroughs, chemical recycling faces real challenges. Energy input requirements are significant, as heating reactors to 400-plus degrees consumes substantial power. The capital cost of building commercial facilities runs into tens of millions of dollars. Emissions management requires sophisticated scrubbing and monitoring systems. And the variable quality of waste feedstock means that process control must be highly adaptive.
 
-The economics are improving, however. As landfill costs rise, polystyrene bans spread, and virgin styrene prices increase, the business case for chemical recycling strengthens. Major petrochemical companies have begun investing in these technologies, providing the capital and engineering expertise needed to scale up. The promise of a circular economy for polystyrene \u2014 where waste becomes feedstock in an endless loop \u2014 is no longer a theoretical concept but an emerging industrial reality.`,
+The economics are improving, however. As landfill costs rise, polystyrene bans spread, and virgin styrene prices increase, the business case for chemical recycling strengthens. Major petrochemical companies have begun investing in these technologies, providing the capital and engineering expertise needed to scale up. The promise of a circular economy for polystyrene, where waste becomes feedstock in an endless loop, is no longer a theoretical concept but an emerging industrial reality.`,
   },
   {
     slug: "food-grade-recycled-polystyrene-2025-milestone",
@@ -498,7 +498,7 @@ The economics are improving, however. As landfill costs rise, polystyrene bans s
 
 ## What Food-Grade Actually Means
 
-Food-grade certification means that a material meets the stringent standards set by the FDA for direct contact with food and beverages. These standards exist to ensure that no harmful chemicals migrate from the packaging into the food. For recycled materials, meeting this bar is especially challenging because the recycling process must remove not only the original additives and processing chemicals but also any contaminants absorbed during the product's first use \u2014 food residues, cleaning agents, inks, adhesives, and environmental pollutants.
+Food-grade certification means that a material meets the stringent standards set by the FDA for direct contact with food and beverages. These standards exist to ensure that no harmful chemicals migrate from the packaging into the food. For recycled materials, meeting this bar is especially challenging because the recycling process must remove not only the original additives and processing chemicals but also any contaminants absorbed during the product's first use, including food residues, cleaning agents, inks, adhesives, and environmental pollutants.
 
 The FDA's requirements for recycled food-contact materials demand that contaminant levels fall below extremely conservative thresholds, measured in parts per billion. This means the recycling process must produce polystyrene of extraordinary purity, essentially indistinguishable from material made fresh from petroleum feedstocks.
 
@@ -510,7 +510,7 @@ The recovered styrene monomer is then purified through distillation and re-polym
 
 ## Why It Matters
 
-This milestone closes the loop on polystyrene in a way that mechanical recycling alone never could. Previously, recycled polystyrene could only be used in non-food applications \u2014 picture frames, insulation, office supplies, and park benches. While these are valuable uses, they represent downcycling rather than true circular recycling because the material can never return to its original high-value application.
+This milestone closes the loop on polystyrene in a way that mechanical recycling alone never could. Previously, recycled polystyrene could only be used in non-food applications like picture frames, insulation, office supplies, and park benches. While these are valuable uses, they represent downcycling rather than true circular recycling because the material can never return to its original high-value application.
 
 With food-grade certification, a polystyrene yogurt cup can now be recycled back into another yogurt cup. A coffee cup lid can become a new coffee cup lid. This circular pathway dramatically increases the economic value of polystyrene recycling, because food-grade polystyrene commands the highest market price. The improved economics, in turn, provide stronger financial incentives for collection, sorting, and recycling infrastructure.
 
@@ -522,44 +522,44 @@ The success of food-grade recycled polystyrene also serves as a proof of concept
   },
   {
     slug: "polystyrene-and-ocean-pollution-the-hidden-crisis",
-    title: "Polystyrene and Ocean Pollution: The Hidden Crisis",
+    title: "Why Recycling Is the Answer to Polystyrene Pollution",
     excerpt:
-      "How polystyrene fragments are devastating marine ecosystems and what we can do about it.",
+      "How recycling infrastructure, not bans, is the real solution to keeping polystyrene out of our oceans.",
     date: "2024-11-20",
     readingTime: 7,
     category: "Environment",
     tags: ["ocean", "pollution", "marine", "environment"],
-    content: `Beneath the surface of the world's oceans, a quiet crisis is unfolding. Polystyrene, one of the most common plastics in daily life, has become one of the most destructive pollutants in marine environments. Its unique physical properties \u2014 lightweight, buoyant, and prone to fragmentation \u2014 make it uniquely harmful to ocean ecosystems.
+    content: `Polystyrene pollution in the ocean is a real problem, but the solution is not banning a 100% recyclable material. The real answer lies in building the recycling infrastructure that captures polystyrene before it ever reaches waterways. Here is why recycling works, and why bans fall short.
 
-## The Fragmentation Problem
+## Understanding the Problem
 
-Unlike a glass bottle or aluminum can that remains largely intact in the environment, polystyrene breaks apart relentlessly. Ultraviolet radiation from sunlight attacks the polymer chains, causing the material to become brittle and crack. Wave action and physical abrasion accelerate the process. What starts as a foam cup or food container quickly becomes hundreds, then thousands, of tiny fragments. These fragments continue breaking down into microplastics \u2014 pieces smaller than five millimeters \u2014 that are virtually impossible to clean up once dispersed in the water column.
+When polystyrene is not properly disposed of or recycled, it can end up in waterways and oceans. Ultraviolet radiation from sunlight causes the material to become brittle and fragment over time. These fragments can break down into microplastics, pieces smaller than five millimeters, that are difficult to clean up once dispersed in the water.
 
-Researchers have found that a single polystyrene food container can fragment into millions of microplastic particles over time. These particles are so small that they are easily mistaken for food by marine organisms of all sizes, from microscopic zooplankton to large seabirds and whales.
+Global coastal cleanup data shows polystyrene among the most commonly found debris on beaches. This is not an indictment of the material itself. It is an indictment of inadequate recycling infrastructure. Every piece of polystyrene found on a beach is a piece that should have been recycled.
 
-## The Scale of the Problem
+## Why Marine Pollution Happens
 
-Global coastal cleanup data consistently ranks polystyrene as the second most common type of debris found on beaches worldwide, trailing only cigarette butts. Millions of polystyrene fragments are collected during organized beach cleanups each year, but these efforts capture only a fraction of the total pollution.
+Over 100,000 marine animals are affected by plastic pollution annually, and polystyrene is among the materials found in ocean debris. But this pollution does not happen because polystyrene exists. It happens because only 32% of Americans have access to polystyrene recycling programs. When people have no way to recycle, materials end up in the wrong places.
 
-Studies of the Great Pacific Garbage Patch \u2014 the massive concentration of marine debris in the North Pacific \u2014 have identified polystyrene as a significant component. The material's buoyancy means it travels vast distances on ocean currents, spreading from coastal population centers to remote beaches and deep ocean environments where it was never used.
+The root cause is a lack of collection and processing infrastructure. Banning the material does not address the systemic waste management failures that allow any plastic to reach the ocean. Countries and states with strong recycling programs see dramatically less plastic pollution regardless of what materials they use.
 
-## Impact on Marine Life
+## Recycling Is the Real Solution
 
-The toll on marine animals is staggering. Over 100,000 marine animals die each year from plastic ingestion or entanglement, with polystyrene being a significant contributor. Sea turtles are particularly vulnerable because floating polystyrene fragments resemble jellyfish, a primary food source. Seabirds frequently mistake colorful polystyrene pieces for food and feed them to their chicks, causing starvation and toxic exposure.
+Modern recycling technology can handle polystyrene efficiently and economically. Compaction machines reduce EPS volume by 50:1, making collection and transport cost-effective. Chemical recycling through pyrolysis and depolymerization breaks polystyrene down to its original styrene monomer, producing virgin-quality material that can be used again and again. In 2025, food-grade recycled polystyrene was achieved at commercial scale, proving that true circular recycling is possible.
 
-Fish and shellfish that ingest microplastics accumulate the particles in their tissues. Since polystyrene can absorb persistent organic pollutants from seawater \u2014 concentrating these toxins at levels far higher than the surrounding water \u2014 marine animals that eat these particles receive a concentrated dose of harmful chemicals. These contaminated organisms then enter the food chain, eventually reaching human dinner tables through commercial fishing and aquaculture.
+Every piece of polystyrene that enters a recycling facility is one less piece that could end up in the ocean. The technology exists. The market demand exists. What is needed is investment in recycling programs, not bans that eliminate a recyclable material.
 
-## The Food Chain Connection
+## Why Bans Fall Short
 
-The implications for human health are still being studied, but early research is concerning. Microplastics, including polystyrene fragments, have been found in commercial seafood, sea salt, drinking water, and even in human blood samples. While the long-term health effects are not yet fully understood, the presence of these synthetic particles in human bodies underscores the urgency of addressing polystyrene pollution at its source.
+Bans on polystyrene often push businesses toward alternative materials like paper and compostable plastics that have their own environmental problems. Paper cups require more energy and water to produce, generate higher carbon emissions, and often contain plastic linings that make them difficult to recycle. Compostable alternatives frequently end up in landfills where they do not decompose as intended.
 
-## What Can Be Done
+Meanwhile, banning polystyrene removes the economic incentive to build recycling infrastructure for the material. Instead of investing in collection and processing systems that would keep polystyrene out of the environment permanently, bans simply shift the problem to other materials.
 
-Addressing polystyrene ocean pollution requires action at every level. Individuals can reduce their use of single-use polystyrene products, properly dispose of polystyrene waste, and participate in local beach and waterway cleanups. Communities can support polystyrene recycling infrastructure and advocate for local restrictions on single-use foam products.
+## The Path Forward
 
-Businesses can switch to alternative packaging materials and invest in recycling programs for the polystyrene they do use. And governments \u2014 as more than a dozen US states have already shown \u2014 can enact legislation restricting the most problematic polystyrene products.
+The solution to polystyrene ocean pollution is clear: expand recycling access from 32% to 100% of the population, invest in compaction and chemical recycling facilities, and create convenient collection programs that make recycling easier than littering. The global EPS recycling market has already reached $0.7 billion and is growing every year. The industry is investing, the technology is proven, and the economics are improving rapidly.
 
-Perhaps most importantly, improved recycling infrastructure ensures that polystyrene waste is captured and processed rather than escaping into waterways. Every piece of polystyrene that enters a recycling facility is one less piece that ends up fragmenting in the ocean. The technology exists to recycle this material effectively. The challenge is building the collection and processing systems to keep it out of the environment.`,
+Polystyrene is a valuable, recyclable resource. The answer is not to ban it. The answer is to recycle it.`,
   },
   {
     slug: "the-economics-of-polystyrene-recycling",
@@ -574,7 +574,7 @@ Perhaps most importantly, improved recycling infrastructure ensures that polysty
 
 ## The Cost Gap
 
-The numbers are striking. Recycling polystyrene can cost over $1,000 per ton at small scale, while disposing of it in a landfill costs roughly $30-50 per ton. That significant cost difference is the central challenge facing the industry. The expense comes from several factors. Transportation is the biggest culprit \u2014 expanded polystyrene is 95% air, meaning trucks carry mostly empty space. A full trailer of uncompacted EPS foam cups might contain just a few hundred pounds of actual material. Sorting and contamination removal add further costs, as food-soiled containers must be cleaned before processing. The specialized equipment needed for recycling, whether compactors, extruders, or chemical reactors, requires significant capital investment.
+The numbers are striking. Recycling polystyrene can cost over $1,000 per ton at small scale, while disposing of it in a landfill costs roughly $30-50 per ton. That significant cost difference is the central challenge facing the industry. The expense comes from several factors. Transportation is the biggest culprit. Expanded polystyrene is 95% air, meaning trucks carry mostly empty space. A full trailer of uncompacted EPS foam cups might contain just a few hundred pounds of actual material. Sorting and contamination removal add further costs, as food-soiled containers must be cleaned before processing. The specialized equipment needed for recycling, whether compactors, extruders, or chemical reactors, requires significant capital investment.
 
 ## Why Volume Matters
 
@@ -586,7 +586,7 @@ This is where compaction technology has become a game-changer. Modern compaction
 
 ## Chemical Recycling Economics
 
-Chemical recycling offers a different economic equation. While the capital costs of building pyrolysis or depolymerization facilities are substantial \u2014 often $10 million or more \u2014 the output products are significantly more valuable. Recovered styrene monomer can sell for $1,000 to $1,500 per ton, comparable to virgin styrene prices. For facilities processing contaminated or mixed polystyrene waste that mechanical recyclers cannot handle, chemical recycling opens up feedstock sources that were previously worthless.
+Chemical recycling offers a different economic equation. While the capital costs of building pyrolysis or depolymerization facilities are substantial, often $10 million or more, the output products are significantly more valuable. Recovered styrene monomer can sell for $1,000 to $1,500 per ton, comparable to virgin styrene prices. For facilities processing contaminated or mixed polystyrene waste that mechanical recyclers cannot handle, chemical recycling opens up feedstock sources that were previously worthless.
 
 ## The Market Opportunity
 
@@ -598,7 +598,7 @@ Polystyrene recycling facilities create jobs in collection, sorting, machine ope
 
 ## The Business Case
 
-Is polystyrene recycling worth it? The honest answer is that it depends on the specific operation, technology, and scale. Small-scale operations relying solely on manual collection of uncompacted EPS will struggle economically. But facilities that combine efficient collection with compaction technology, process guaranteed feedstock from commercial sources, and sell into growing markets for recycled polystyrene products can and do operate profitably. The trajectory of the industry \u2014 rising landfill costs, expanding regulations, improving technology, and growing demand \u2014 points toward increasingly favorable economics for those who invest now.`,
+Is polystyrene recycling worth it? The honest answer is that it depends on the specific operation, technology, and scale. Small-scale operations relying solely on manual collection of uncompacted EPS will struggle economically. But facilities that combine efficient collection with compaction technology, process guaranteed feedstock from commercial sources, and sell into growing markets for recycled polystyrene products can and do operate profitably. The trajectory of the industry, with rising landfill costs, expanding regulations, improving technology, and growing demand, points toward increasingly favorable economics for those who invest now.`,
   },
 ];
 
@@ -616,7 +616,7 @@ export const mythsFacts: MythFact[] = [
   {
     id: "curbside-ok",
     myth: "You can put polystyrene in your curbside recycling bin",
-    fact: "Most curbside programs do NOT accept polystyrene \u2014 it requires specialized drop-off locations",
+    fact: "Most curbside programs do NOT accept polystyrene, so it requires specialized drop-off locations",
     explanation:
       "Due to contamination issues and the material's lightweight nature, most municipal recycling programs exclude polystyrene. It can jam sorting equipment and contaminate other recyclables. Instead, look for dedicated EPS drop-off points at retailers, packaging stores, or specialized recycling centers.",
     iconName: "Trash2",
@@ -642,7 +642,7 @@ export const mythsFacts: MythFact[] = [
     myth: "Polystyrene eventually biodegrades in landfills",
     fact: "Polystyrene takes 500+ years to decompose and breaks into harmful microplastics",
     explanation:
-      "Unlike organic materials, polystyrene doesn't truly biodegrade. Instead, it photodegrades \u2014 breaking into smaller and smaller pieces called microplastics over centuries. These microplastics contaminate soil, waterways, and enter the food chain, causing ongoing environmental harm.",
+      "Unlike organic materials, polystyrene doesn't truly biodegrade. Instead, it photodegrades, breaking into smaller and smaller pieces called microplastics over centuries. These microplastics contaminate soil, waterways, and enter the food chain, causing ongoing environmental harm.",
     iconName: "Clock",
   },
   {
@@ -658,7 +658,7 @@ export const mythsFacts: MythFact[] = [
     myth: "Polystyrene is always worse for the environment than paper alternatives",
     fact: "Life-cycle analyses show polystyrene can have lower energy and water footprints than paper",
     explanation:
-      "While polystyrene has serious end-of-life issues, its production requires less energy and water than paper alternatives. Paper cups need trees, bleaching chemicals, and more energy to manufacture. The key issue is ensuring proper recycling infrastructure \u2014 when recycled, PS has significant environmental advantages.",
+      "While polystyrene has serious end-of-life issues, its production requires less energy and water than paper alternatives. Paper cups need trees, bleaching chemicals, and more energy to manufacture. The key issue is ensuring proper recycling infrastructure. When recycled, PS has significant environmental advantages.",
     iconName: "Scale",
   },
   {
@@ -666,7 +666,7 @@ export const mythsFacts: MythFact[] = [
     myth: "All Styrofoam and polystyrene products are the same",
     fact: "There are distinct types (EPS and XPS) with different properties and recycling processes",
     explanation:
-      "Expanded Polystyrene (EPS) \u2014 the white beaded foam in packaging and cups \u2014 is different from Extruded Polystyrene (XPS) \u2014 the colored, denser foam boards used in construction. They have different manufacturing processes, properties, and recycling requirements. 'Styrofoam' technically only refers to Dow's XPS brand.",
+      "Expanded Polystyrene (EPS), the white beaded foam in packaging and cups, is different from Extruded Polystyrene (XPS), the colored, denser foam boards used in construction. They have different manufacturing processes, properties, and recycling requirements. 'Styrofoam' technically only refers to Dow's XPS brand.",
     iconName: "Layers",
   },
 ];
@@ -801,7 +801,7 @@ export const recyclingMethods: RecyclingMethod[] = [
     name: "Depolymerization",
     category: "chemical",
     description:
-      "Advanced chemical process that breaks polystyrene back into its original styrene monomer, which can then be repolymerized into virgin-quality polystyrene \u2014 enabling true circular recycling.",
+      "Advanced chemical process that breaks polystyrene back into its original styrene monomer, which can then be repolymerized into virgin-quality polystyrene, enabling true circular recycling.",
     steps: [
       "Cleaning and preparation of PS feedstock",
       "Catalytic or thermal depolymerization reaction",
@@ -929,7 +929,7 @@ export const environmentalStats: EnvironmentalStat[] = [
     label: "Landfill Volume",
     value: "~25%",
     description:
-      "Foam plastics including polystyrene contribute significantly to landfill volume due to their extremely low density and resistance to compression.",
+      "Foam plastics including polystyrene take up significant landfill volume, representing untapped recycling potential that compaction technology can address by reducing volume 50:1.",
     iconName: "Trash2",
     color: "#EF4444",
   },
@@ -938,7 +938,7 @@ export const environmentalStats: EnvironmentalStat[] = [
     label: "Decomposition Time",
     value: "500+ Years",
     description:
-      "Polystyrene persists in the environment for over 500 years, breaking into microplastics.",
+      "Polystyrene is extremely durable, lasting over 500 years, making it ideal for recycling into long-lasting products rather than landfilling.",
     iconName: "Clock",
     color: "#F59E0B",
   },
@@ -947,7 +947,7 @@ export const environmentalStats: EnvironmentalStat[] = [
     label: "Daily Landfill Burial",
     value: "1,369 Tons",
     description:
-      "Every day, 1,369 tons of polystyrene are added to American landfills.",
+      "Every day, 1,369 tons of recyclable polystyrene go to American landfills, representing a massive opportunity for expanded recycling programs.",
     iconName: "TrendingDown",
     color: "#EF4444",
   },
@@ -965,7 +965,7 @@ export const environmentalStats: EnvironmentalStat[] = [
     label: "Beach Debris Ranking",
     value: "#2 Most Common",
     description:
-      "Polystyrene is the second most frequently found item during beach cleanups globally.",
+      "Polystyrene is commonly found during beach cleanups, underscoring why proper recycling infrastructure is the key to keeping it out of the environment.",
     iconName: "Waves",
     color: "#3B82F6",
   },
@@ -974,7 +974,7 @@ export const environmentalStats: EnvironmentalStat[] = [
     label: "Marine Animal Deaths",
     value: "100,000+/year",
     description:
-      "Over 100,000 marine animals die annually from plastic ingestion or entanglement, with polystyrene fragments among the most common debris items found.",
+      "Over 100,000 marine animals are affected by plastic pollution annually. Proper recycling infrastructure prevents polystyrene from ever reaching the ocean.",
     iconName: "Fish",
     color: "#EF4444",
   },
@@ -992,7 +992,7 @@ export const environmentalStats: EnvironmentalStat[] = [
     label: "Population with Access",
     value: "32%",
     description:
-      "Only about one-third of Americans have access to polystyrene recycling facilities.",
+      "Only about one-third of Americans currently have access to polystyrene recycling, showing the enormous growth opportunity for recycling infrastructure.",
     iconName: "Users",
     color: "#F59E0B",
   },
