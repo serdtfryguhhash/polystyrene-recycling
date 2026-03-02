@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/accordion";
 import ProcessStep from "@/components/ProcessStep";
 import RecyclingMap from "@/components/RecyclingMap";
+import StatePolicyTabs from "@/components/StatePolicyTabs";
 import { recyclingMethods, policyData } from "@/data/polystyrene-data";
 import {
   Recycle,
@@ -60,12 +61,6 @@ const categoryIcons: Record<string, React.ReactNode> = {
   "Pre-processing": <Scale className="w-4 h-4" />,
   Thermal: <Sparkles className="w-4 h-4" />,
   Emerging: <Beaker className="w-4 h-4" />,
-};
-
-const policyTypeColors: Record<string, string> = {
-  ban: "bg-red-500/15 text-red-400 border-red-500/30",
-  restriction: "bg-amber-500/15 text-amber-400 border-amber-500/30",
-  legislation: "bg-blue-500/15 text-blue-400 border-blue-500/30",
 };
 
 export default function HowToRecyclePage() {
@@ -216,42 +211,11 @@ export default function HowToRecyclePage() {
           State Policies &amp; Bans
         </h2>
         <p className="text-muted-foreground mb-8">
-          A growing number of US states have enacted polystyrene bans and
-          restrictions. Here is the current landscape.
+          All 50 US states and their current polystyrene policy status. Click on
+          banned states to learn why they were banned and what efforts are
+          underway to change the legislation.
         </p>
-        <Accordion type="single" collapsible className="w-full">
-          {policyData.map((policy) => (
-            <AccordionItem
-              key={policy.state}
-              value={policy.state}
-              className="border-border/50"
-            >
-              <AccordionTrigger className="hover:no-underline">
-                <div className="flex items-center gap-3">
-                  <span className="font-medium text-foreground">
-                    {policy.state}
-                  </span>
-                  <Badge
-                    variant="outline"
-                    className={`text-[10px] capitalize ${
-                      policyTypeColors[policy.type] || ""
-                    }`}
-                  >
-                    {policy.type}
-                  </Badge>
-                  <span className="text-xs text-muted-foreground">
-                    {policy.year}
-                  </span>
-                </div>
-              </AccordionTrigger>
-              <AccordionContent>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {policy.description}
-                </p>
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
+        <StatePolicyTabs policies={policyData} />
       </section>
 
       {/* 2025 Innovations */}

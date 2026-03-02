@@ -62,9 +62,12 @@ export interface EnvironmentalStat {
 
 export interface PolicyItem {
   state: string;
+  abbreviation: string;
   description: string;
   year: number;
-  type: "ban" | "restriction" | "incentive";
+  type: "ban" | "restriction" | "no-ban";
+  banReason?: string;
+  unbanEfforts?: string;
 }
 
 // ===== FUN FACTS =====
@@ -998,95 +1001,457 @@ export const environmentalStats: EnvironmentalStat[] = [
 // ===== POLICY DATA =====
 
 export const policyData: PolicyItem[] = [
+  // ===== BANNED STATES =====
   {
     state: "Maine",
+    abbreviation: "ME",
     description:
-      "Banned polystyrene food containers statewide, with exemptions for raw meat and seafood trays.",
+      "Banned EPS food containers statewide, with exemptions for raw meat and seafood trays.",
     year: 2021,
     type: "ban",
+    banReason:
+      "Concerns over marine pollution along Maine's coastline, where EPS fragments were among the most common litter items found during beach cleanups, threatening wildlife and the fishing industry.",
+    unbanEfforts:
+      "The EPS Industry Alliance has lobbied for chemical recycling exemptions, arguing that advanced recycling technologies can divert EPS from landfills. Industry groups have also funded pilot drop-off programs to demonstrate recyclability.",
   },
   {
     state: "Maryland",
+    abbreviation: "MD",
     description:
       "First state to enact a statewide ban on EPS food service products, effective October 2020.",
     year: 2020,
     type: "ban",
+    banReason:
+      "Chesapeake Bay pollution was a primary driver, as EPS foam was identified as a leading pollutant in waterways feeding into the bay, harming aquatic ecosystems and contributing to persistent litter.",
+    unbanEfforts:
+      "Packaging manufacturers have challenged the ban through legislative lobbying, proposing amendments that would allow recycled-content EPS products. Industry-funded studies on chemical recycling viability have been presented to state legislators.",
   },
   {
     state: "Vermont",
+    abbreviation: "VT",
     description:
       "Comprehensive ban on single-use EPS food containers as part of broader single-use plastics legislation.",
     year: 2021,
     type: "ban",
+    banReason:
+      "Environmental stewardship and landfill reduction goals drove the legislation, as EPS was identified as a non-recyclable material in most municipal waste streams, persisting in landfills for centuries.",
+    unbanEfforts:
+      "Industry advocates have pushed for recognition of emerging chemical recycling processes that could convert EPS back into styrene monomer, arguing the ban is premature given technological advances in polystyrene recycling.",
   },
   {
     state: "New York",
+    abbreviation: "NY",
     description:
-      "Banned EPS foam containers and loose-fill packaging peanuts in food service establishments.",
+      "Banned EPS foam containers and loose-fill packaging peanuts statewide.",
     year: 2022,
     type: "ban",
+    banReason:
+      "Severe litter and sanitation issues in New York City, where EPS containers clogged storm drains, contaminated waterways, and were a persistent source of street litter that proved nearly impossible to clean up effectively.",
+    unbanEfforts:
+      "The Restaurant Action Alliance and packaging industry filed lawsuits challenging the ban, arguing EPS is recyclable and that the ban unfairly burdens small businesses. Industry groups continue to advocate for recycling infrastructure investment as an alternative to prohibition.",
   },
   {
     state: "New Jersey",
+    abbreviation: "NJ",
     description:
-      "Broad single-use plastics law that includes EPS food container ban alongside plastic bag restrictions.",
+      "Broad single-use plastics law including EPS food container ban alongside plastic bag restrictions.",
     year: 2022,
     type: "ban",
+    banReason:
+      "Shoreline pollution and coastal tourism impacts were key motivators, as EPS debris on New Jersey beaches posed environmental and economic threats to the state's significant beach tourism industry.",
+    unbanEfforts:
+      "Industry coalitions have lobbied for phased exemptions and promoted investment in EPS recycling infrastructure. Chemical recycling companies have proposed pilot facilities in the state as alternatives to outright bans.",
   },
   {
     state: "Colorado",
+    abbreviation: "CO",
     description:
       "Phased ban on polystyrene food containers, with full implementation by 2024 for all food service.",
     year: 2024,
     type: "ban",
+    banReason:
+      "Landfill space concerns and mountain watershed protection drove the legislation, as lightweight EPS was frequently found in rivers and streams feeding into Colorado's reservoirs and recreational waterways.",
+    unbanEfforts:
+      "The Foodservice Packaging Institute has advocated for recycling-based alternatives and sought exemptions for facilities near certified EPS recycling centers. Industry groups have funded community recycling pilot programs to demonstrate EPS can be diverted from landfills.",
   },
   {
     state: "Washington",
+    abbreviation: "WA",
     description:
       "Expanded existing restrictions to include all EPS food service ware and coolers by 2025.",
     year: 2025,
     type: "ban",
+    banReason:
+      "Protection of Puget Sound marine ecosystems was a central concern, as EPS microplastics were detected in salmon habitats and shellfish beds, threatening both wildlife and the state's commercial fishing industry.",
+    unbanEfforts:
+      "Recycling industry stakeholders have proposed amendments allowing EPS products made with recycled content. Lobbyists have also pushed for recognition of densification technology that compacts EPS for more efficient recycling and transport.",
   },
   {
     state: "Oregon",
+    abbreviation: "OR",
     description:
       "Banned EPS food containers for restaurants and food vendors, with allowances for wholesale packaging.",
     year: 2020,
     type: "ban",
+    banReason:
+      "Pacific Ocean pollution and coastal ecosystem damage prompted the ban, with studies showing EPS as one of the top five debris items collected during Oregon coastal cleanups year after year.",
+    unbanEfforts:
+      "Industry groups have promoted mechanical recycling programs and lobbied for wholesale packaging exemptions to remain in place. The EPS Industry Alliance has also funded beach cleanup events to demonstrate corporate responsibility while arguing for recycling over bans.",
   },
   {
-    state: "California",
+    state: "Rhode Island",
+    abbreviation: "RI",
     description:
-      "Multiple local ordinances across 130+ cities; statewide polystyrene reduction targets under SB 54.",
+      "Banned single-use EPS food containers statewide as part of a comprehensive plastics reduction effort.",
+    year: 2024,
+    type: "ban",
+    banReason:
+      "Narragansett Bay water quality concerns and general litter reduction goals drove the legislation, as EPS fragments were a persistent contaminant in the bay's watershed and surrounding communities.",
+    unbanEfforts:
+      "Packaging manufacturers have lobbied for delayed implementation timelines and promoted industry-funded recycling collection programs as proof that EPS diversion is achievable without outright prohibition.",
+  },
+  {
+    state: "Hawaii",
+    abbreviation: "HI",
+    description:
+      "De facto ban through county-level ordinances covering all major islands and food service operations.",
+    year: 2022,
+    type: "ban",
+    banReason:
+      "Island ecosystems are especially vulnerable to plastic pollution, and EPS was identified as a top marine debris item washing up on Hawaiian beaches, threatening sea turtles, seabirds, and coral reef systems.",
+    unbanEfforts:
+      "Given the county-level structure of the bans, industry advocates have focused on individual county councils, proposing recycling pilot programs and seeking exemptions for specific EPS applications where alternatives are cost-prohibitive.",
+  },
+  {
+    state: "Virginia",
+    abbreviation: "VA",
+    description:
+      "Banned polystyrene food containers statewide, with the ban taking effect July 2023.",
+    year: 2021,
+    type: "ban",
+    banReason:
+      "Chesapeake Bay watershed protection and litter reduction in Virginia's waterways were primary motivators, as EPS was consistently found among the most prevalent debris items in tributary cleanups.",
+    unbanEfforts:
+      "Industry groups have advocated for amendments that would exempt EPS products with demonstrated recyclability. Lobbyists have also proposed chemical recycling facility investments in Virginia as a job-creating alternative to bans.",
+  },
+  {
+    state: "Connecticut",
+    abbreviation: "CT",
+    description:
+      "Banned EPS food service containers as part of broader packaging reduction legislation.",
+    year: 2024,
+    type: "ban",
+    banReason:
+      "Long Island Sound pollution and municipal waste reduction goals drove the legislation, as EPS was a significant contributor to litter in coastal towns and a persistent contaminant in the state's waste stream.",
+    unbanEfforts:
+      "The plastics industry has lobbied for extended producer responsibility frameworks that would fund EPS recycling rather than banning the material outright. Industry advocates have pointed to successful European EPS recycling programs as models.",
+  },
+
+  // ===== RESTRICTED STATES =====
+  {
+    state: "California",
+    abbreviation: "CA",
+    description:
+      "Over 130 cities have local EPS ordinances. Statewide polystyrene reduction targets established under SB 54, requiring significant source reduction of single-use packaging by 2032.",
     year: 2023,
     type: "restriction",
   },
   {
     state: "Delaware",
+    abbreviation: "DE",
     description:
-      "Restricted EPS food containers in food service, with a phase-in period for small businesses.",
+      "Restricted EPS food containers in food service establishments, with a phase-in period granting small businesses additional time to transition to alternative materials.",
     year: 2022,
     type: "restriction",
   },
   {
-    state: "Rhode Island",
+    state: "Massachusetts",
+    abbreviation: "MA",
     description:
-      "Banned single-use EPS food containers statewide, part of a comprehensive plastics reduction effort.",
-    year: 2024,
-    type: "ban",
-  },
-  {
-    state: "Hawaii",
-    description:
-      "De facto ban through county-level ordinances covering all major islands and food service operations.",
-    year: 2022,
-    type: "ban",
-  },
-  {
-    state: "Virginia",
-    description:
-      "Partial restrictions on EPS in certain localities, with statewide recycling incentive programs.",
-    year: 2025,
+      "Over 100 municipalities have enacted local EPS food container bans. No statewide ban exists yet, but multiple bills have been introduced in the state legislature seeking comprehensive polystyrene restrictions.",
+    year: 0,
     type: "restriction",
+  },
+  {
+    state: "Minnesota",
+    abbreviation: "MN",
+    description:
+      "Minneapolis and St. Paul have enacted bans on polystyrene food containers. Statewide legislation has been proposed multiple times but has not yet passed, with ongoing debate between environmental groups and industry advocates.",
+    year: 0,
+    type: "restriction",
+  },
+  {
+    state: "Illinois",
+    abbreviation: "IL",
+    description:
+      "Chicago has banned EPS food containers within city limits. No statewide ban exists, but industry-supported recycling programs are active in several metropolitan areas, and legislative discussions continue.",
+    year: 0,
+    type: "restriction",
+  },
+  {
+    state: "Pennsylvania",
+    abbreviation: "PA",
+    description:
+      "Philadelphia has enacted local EPS restrictions on food service containers. Statewide preemption debates are ongoing, with state legislators divided on whether municipalities should have authority to enact their own bans.",
+    year: 0,
+    type: "restriction",
+  },
+  {
+    state: "Michigan",
+    abbreviation: "MI",
+    description:
+      "Several municipalities have adopted local EPS restrictions. Statewide recycling incentive programs are being explored, with industry groups promoting expanded drop-off infrastructure as an alternative to bans.",
+    year: 0,
+    type: "restriction",
+  },
+  {
+    state: "Florida",
+    abbreviation: "FL",
+    description:
+      "Some local jurisdictions have attempted EPS restrictions, but a state preemption law limits the ability of municipalities to enact their own bans on polystyrene products. Legislative efforts to repeal preemption have been introduced.",
+    year: 0,
+    type: "restriction",
+  },
+
+  // ===== NO-BAN STATES =====
+  {
+    state: "Alabama",
+    abbreviation: "AL",
+    description:
+      "No statewide ban or restrictions on polystyrene. Alabama relies on voluntary recycling efforts and industry-led collection programs. Some communities participate in regional EPS drop-off events organized by packaging manufacturers.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "Alaska",
+    abbreviation: "AK",
+    description:
+      "No ban or restrictions in place. Alaska's remote geography and small population centers make EPS recycling infrastructure challenging. The state focuses on general waste reduction initiatives rather than material-specific bans.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "Arizona",
+    abbreviation: "AZ",
+    description:
+      "No statewide ban or restrictions. Arizona has a market-driven approach to EPS management, with several private recycling facilities accepting clean EPS in the Phoenix metropolitan area. Industry groups have promoted voluntary collection programs.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "Arkansas",
+    abbreviation: "AR",
+    description:
+      "No ban or significant restrictions on polystyrene. Arkansas hosts some EPS manufacturing operations and favors industry self-regulation. Voluntary recycling programs exist on a limited basis in larger cities like Little Rock.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "Georgia",
+    abbreviation: "GA",
+    description:
+      "No statewide ban on polystyrene. Georgia has a growing number of private EPS recycling drop-off locations, particularly in the Atlanta metro area. The state supports industry-led recycling initiatives rather than regulatory approaches.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "Idaho",
+    abbreviation: "ID",
+    description:
+      "No ban or restrictions in place. Idaho takes a market-driven approach to polystyrene waste management. Limited recycling infrastructure exists, though some private haulers accept clean EPS foam in the Boise area.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "Indiana",
+    abbreviation: "IN",
+    description:
+      "No statewide ban or restrictions. Indiana has several EPS recycling facilities operating in the Indianapolis region. The state favors voluntary industry programs and has not pursued polystyrene-specific legislation.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "Iowa",
+    abbreviation: "IA",
+    description:
+      "No ban or restrictions on polystyrene products. Iowa's approach emphasizes general recycling education and voluntary participation. Some university campuses have independently moved away from EPS food service containers.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "Kansas",
+    abbreviation: "KS",
+    description:
+      "No statewide ban or restrictions. Kansas relies on market-based solutions for EPS waste management. A small number of recycling facilities accept clean expanded polystyrene, mainly in the Kansas City and Wichita areas.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "Kentucky",
+    abbreviation: "KY",
+    description:
+      "No ban or restrictions in place. Kentucky has minimal EPS-specific recycling infrastructure but participates in broader regional recycling programs. The state has not considered polystyrene-specific legislation to date.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "Louisiana",
+    abbreviation: "LA",
+    description:
+      "No statewide ban or restrictions on polystyrene. Louisiana's petrochemical industry presence influences the policy landscape, favoring recycling and reuse initiatives over material bans. Some voluntary collection events occur in New Orleans and Baton Rouge.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "Mississippi",
+    abbreviation: "MS",
+    description:
+      "No ban or restrictions in place. Mississippi has limited EPS recycling infrastructure and no pending legislation targeting polystyrene. The state focuses on general litter reduction and waste management improvements.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "Missouri",
+    abbreviation: "MO",
+    description:
+      "No statewide ban or restrictions. Missouri has a handful of private EPS recycling operations, primarily in the St. Louis and Kansas City metro areas. Industry groups have promoted voluntary drop-off programs rather than regulatory measures.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "Montana",
+    abbreviation: "MT",
+    description:
+      "No ban or restrictions on polystyrene. Montana's rural character and dispersed population make centralized recycling infrastructure difficult. The state emphasizes general waste reduction and relies on voluntary recycling participation.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "Nebraska",
+    abbreviation: "NE",
+    description:
+      "No statewide ban or restrictions in place. Nebraska takes a voluntary approach to EPS management, with some recycling options available through private haulers in Omaha and Lincoln. No polystyrene-specific legislation has been proposed.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "Nevada",
+    abbreviation: "NV",
+    description:
+      "No ban or restrictions on polystyrene products. Nevada's hospitality industry is a significant EPS consumer, and the state has favored industry-led recycling solutions. Some Las Vegas resorts have voluntarily transitioned away from EPS food containers.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "New Hampshire",
+    abbreviation: "NH",
+    description:
+      "No statewide ban or restrictions. New Hampshire has a tradition of limited government regulation and relies on voluntary recycling programs. Some communities have independently explored local EPS reduction initiatives.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "New Mexico",
+    abbreviation: "NM",
+    description:
+      "No ban or restrictions in place. New Mexico has limited EPS recycling infrastructure, though Albuquerque has some private drop-off options. The state has focused on broader solid waste management improvements rather than material-specific bans.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "North Carolina",
+    abbreviation: "NC",
+    description:
+      "No statewide ban on polystyrene. North Carolina has several industry-supported EPS recycling drop-off locations in the Charlotte and Raleigh-Durham areas. The EPS Industry Alliance has been active in expanding collection infrastructure.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "North Dakota",
+    abbreviation: "ND",
+    description:
+      "No ban or restrictions in place. North Dakota has minimal EPS-specific recycling programs due to its small population and rural geography. The state has not pursued polystyrene-specific legislation.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "Ohio",
+    abbreviation: "OH",
+    description:
+      "No ban or restrictions in place. Ohio relies on voluntary industry recycling programs, and the EPS Industry Alliance has been expanding drop-off locations throughout the state, particularly in Columbus, Cleveland, and Cincinnati.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "Oklahoma",
+    abbreviation: "OK",
+    description:
+      "No statewide ban or restrictions on polystyrene. Oklahoma favors a market-driven approach and has not considered material-specific bans. Limited private recycling options exist in the Oklahoma City and Tulsa metropolitan areas.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "South Carolina",
+    abbreviation: "SC",
+    description:
+      "No ban or restrictions in place. South Carolina has some industry-sponsored EPS collection events, particularly in coastal communities concerned about marine debris. The state has not pursued statewide polystyrene legislation.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "South Dakota",
+    abbreviation: "SD",
+    description:
+      "No ban or restrictions on polystyrene. South Dakota has very limited EPS recycling infrastructure and no pending legislation. The state takes a general approach to waste management without material-specific regulations.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "Tennessee",
+    abbreviation: "TN",
+    description:
+      "No statewide ban or restrictions. Tennessee has a few private EPS recycling facilities, primarily in the Nashville and Memphis areas. The state supports voluntary recycling initiatives and industry-led collection programs.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "Texas",
+    abbreviation: "TX",
+    description:
+      "No statewide ban or restrictions. Texas has a market-driven approach with several EPS recycling facilities operating in the Houston and Dallas areas. Industry-supported drop-off programs are expanding, and the state's large manufacturing base favors recycling over bans.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "Utah",
+    abbreviation: "UT",
+    description:
+      "No ban or restrictions in place. Utah has limited EPS recycling options, though some private facilities in Salt Lake City accept clean polystyrene foam. The state has not pursued material-specific legislation.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "West Virginia",
+    abbreviation: "WV",
+    description:
+      "No ban or restrictions on polystyrene. West Virginia has minimal EPS recycling infrastructure and no legislative proposals targeting polystyrene. The state focuses on broader waste management and landfill diversion goals.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "Wisconsin",
+    abbreviation: "WI",
+    description:
+      "No statewide ban or restrictions. Wisconsin has some private EPS recycling operations in the Milwaukee and Madison areas. Industry groups have promoted voluntary collection programs and recycling education campaigns throughout the state.",
+    year: 0,
+    type: "no-ban",
+  },
+  {
+    state: "Wyoming",
+    abbreviation: "WY",
+    description:
+      "No ban or restrictions in place. Wyoming's small population and rural character result in very limited EPS recycling infrastructure. The state has not pursued polystyrene-specific regulations and relies on general waste management practices.",
+    year: 0,
+    type: "no-ban",
   },
 ];
