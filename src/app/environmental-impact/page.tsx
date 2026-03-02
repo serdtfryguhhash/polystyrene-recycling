@@ -38,7 +38,7 @@ export default function EnvironmentalImpactPage() {
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
           Polystyrene waste is one of the most persistent environmental
           challenges we face. From overflowing landfills to ocean pollution, the
-          numbers paint a stark picture -- but also point toward solutions.
+          numbers paint a stark picture, but also point toward solutions.
         </p>
       </div>
 
@@ -102,7 +102,7 @@ export default function EnvironmentalImpactPage() {
               <p className="text-muted-foreground leading-relaxed">
                 The problem is compounded by the fact that under 5% of
                 polystyrene waste is recycled in the US. The vast majority ends up in
-                landfills, incinerators, or -- increasingly -- in natural
+                landfills, incinerators, or increasingly in natural
                 environments where it causes severe ecological damage.
               </p>
             </div>

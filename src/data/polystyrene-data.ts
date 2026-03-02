@@ -132,7 +132,7 @@ export const funFacts: FunFact[] = [
     stat: "25%",
     unit: "landfill volume",
     description:
-      "Expanded polystyrene and foam plastics make up a significant portion of landfill volume due to their bulky, lightweight nature — despite representing less than 1% of landfill weight.",
+      "Expanded polystyrene and foam plastics make up a significant portion of landfill volume due to their bulky, lightweight nature, despite representing less than 1% of landfill weight.",
     iconName: "Trash2",
     category: "waste",
   },
@@ -159,7 +159,7 @@ export const funFacts: FunFact[] = [
     stat: "$1,000+",
     unit: "per ton",
     description:
-      "Polystyrene recycling can cost over $1,000 per ton at small scale, compared to $30-50 per ton for landfill disposal — though costs drop significantly with compaction technology and larger operations.",
+      "Polystyrene recycling can cost over $1,000 per ton at small scale, compared to $30-50 per ton for landfill disposal. Costs drop significantly with compaction technology and larger operations.",
     iconName: "DollarSign",
     category: "recycling",
   },

@@ -50,7 +50,7 @@ const consumerSteps = [
     step: 4,
     title: "Transport",
     description:
-      "Bag polystyrene items separately from other recyclables. Because EPS is 95% air, it takes up a lot of space -- break down large pieces and compress when possible. Keep it dry during transport.",
+      "Bag polystyrene items separately from other recyclables. Because EPS is 95% air, it takes up a lot of space. Break down large pieces and compress when possible. Keep it dry during transport.",
     icon: <Truck className="w-5 h-5" />,
   },
 ];

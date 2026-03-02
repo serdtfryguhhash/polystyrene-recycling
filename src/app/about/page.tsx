@@ -85,7 +85,7 @@ export default function AboutPage() {
               trademark of Dow Chemical Company, specifically for their extruded
               polystyrene (XPS) insulation product. The white foam cups and
               containers commonly called &quot;Styrofoam&quot; are actually expanded
-              polystyrene (EPS) -- a different product entirely.
+              polystyrene (EPS), a different product entirely.
             </p>
           </div>
           <div className="space-y-3">

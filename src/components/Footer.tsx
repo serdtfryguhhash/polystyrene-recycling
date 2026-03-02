@@ -13,7 +13,7 @@ const navLinks = [
 
 const quickFacts = [
   "Polystyrene takes 500+ years to decompose in landfills.",
-  "Less than 5% of polystyrene waste is currently recycled worldwide.",
+  "Less than 5% of polystyrene waste is currently recycled in the US.",
   "EPS (Styrofoam) is 95% air by volume, making it lightweight but bulky.",
 ];
 
