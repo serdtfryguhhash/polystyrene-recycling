@@ -37,10 +37,9 @@ export default function FunFactsPage() {
         <Image
           src="/images/hero-recycling.jpg"
           alt="Fun facts about polystyrene recycling"
-          width={1200}
-          height={600}
+          fill
           unoptimized
-          className="w-full h-full object-cover"
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-primary/20" />
       </div>

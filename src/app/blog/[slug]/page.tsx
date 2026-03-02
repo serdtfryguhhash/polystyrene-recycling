@@ -41,6 +41,57 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
   const paragraphs = post.content.split("\n\n");
 
+  // Parse inline markdown (bold)
+  function renderInlineMarkdown(text: string) {
+    const parts = text.split(/(\*\*.*?\*\*)/g);
+    return parts.map((part, i) => {
+      if (part.startsWith("**") && part.endsWith("**")) {
+        return (
+          <strong key={i} className="text-foreground font-semibold">
+            {part.slice(2, -2)}
+          </strong>
+        );
+      }
+      return part;
+    });
+  }
+
+  // Render a content block (heading or paragraph)
+  function renderBlock(block: string, index: number) {
+    const trimmed = block.trim();
+
+    if (trimmed.startsWith("### ")) {
+      return (
+        <h3
+          key={index}
+          className="text-xl font-bold text-foreground mt-10 mb-4"
+        >
+          {renderInlineMarkdown(trimmed.slice(4))}
+        </h3>
+      );
+    }
+
+    if (trimmed.startsWith("## ")) {
+      return (
+        <h2
+          key={index}
+          className="text-2xl font-bold text-foreground mt-10 mb-4"
+        >
+          {renderInlineMarkdown(trimmed.slice(3))}
+        </h2>
+      );
+    }
+
+    return (
+      <p
+        key={index}
+        className="text-muted-foreground leading-relaxed mb-6 text-base"
+      >
+        {renderInlineMarkdown(trimmed)}
+      </p>
+    );
+  }
+
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Back link */}
@@ -58,10 +109,9 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
           <Image
             src={post.image}
             alt={post.imageAlt || post.title}
-            width={1200}
-            height={600}
+            fill
             unoptimized
-            className="w-full h-full object-cover"
+            className="object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
         </div>
@@ -106,15 +156,8 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         </header>
 
         {/* Article content */}
-        <div className="prose prose-invert prose-emerald max-w-none">
-          {paragraphs.map((paragraph, index) => (
-            <p
-              key={index}
-              className="text-muted-foreground leading-relaxed mb-6 text-base"
-            >
-              {paragraph}
-            </p>
-          ))}
+        <div className="max-w-none">
+          {paragraphs.map((paragraph, index) => renderBlock(paragraph, index))}
         </div>
       </article>
 

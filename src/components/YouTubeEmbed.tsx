@@ -23,10 +23,9 @@ export default function YouTubeEmbed({ videoId, title }: YouTubeEmbedProps) {
         <Image
           src={thumbnailUrl}
           alt={title || "Video thumbnail"}
-          width={1200}
-          height={675}
+          fill
           unoptimized
-          className="w-full h-full object-cover"
+          className="object-cover"
         />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors" />

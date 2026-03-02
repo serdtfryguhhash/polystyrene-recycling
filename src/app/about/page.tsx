@@ -67,10 +67,9 @@ export default function AboutPage() {
         <Image
           src="/images/hero-about.jpg"
           alt="Learning about polystyrene and its properties"
-          width={1200}
-          height={600}
+          fill
           unoptimized
-          className="w-full h-full object-cover"
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-primary/20" />
       </div>

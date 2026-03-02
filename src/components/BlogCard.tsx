@@ -10,14 +10,14 @@ interface BlogCardProps {
 }
 
 const categoryGradients: Record<string, string> = {
-  guide: "from-emerald-600/80 to-teal-600/80",
-  myths: "from-purple-600/80 to-indigo-600/80",
-  diy: "from-orange-600/80 to-amber-600/80",
-  policy: "from-blue-600/80 to-cyan-600/80",
-  technology: "from-cyan-600/80 to-blue-600/80",
-  innovation: "from-green-600/80 to-emerald-600/80",
-  environment: "from-teal-600/80 to-green-600/80",
-  economics: "from-emerald-600/80 to-cyan-600/80",
+  Guide: "from-emerald-600/80 to-teal-600/80",
+  Education: "from-purple-600/80 to-indigo-600/80",
+  DIY: "from-orange-600/80 to-amber-600/80",
+  Policy: "from-blue-600/80 to-cyan-600/80",
+  Technology: "from-cyan-600/80 to-blue-600/80",
+  Innovation: "from-green-600/80 to-emerald-600/80",
+  Environment: "from-teal-600/80 to-green-600/80",
+  Business: "from-emerald-600/80 to-cyan-600/80",
 };
 
 export default function BlogCard({ post }: BlogCardProps) {
@@ -32,10 +32,9 @@ export default function BlogCard({ post }: BlogCardProps) {
             <Image
               src={post.image}
               alt={post.imageAlt || post.title}
-              width={1200}
-              height={600}
+              fill
               unoptimized
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              className="object-cover group-hover:scale-105 transition-transform duration-500"
             />
             <div className={`absolute inset-0 bg-gradient-to-t ${gradient} opacity-60`} />
           </div>
