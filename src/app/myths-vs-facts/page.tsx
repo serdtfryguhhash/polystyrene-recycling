@@ -1,7 +1,18 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { ShieldCheck } from "lucide-react";
 import MythCard from "@/components/MythCard";
 import { mythsFacts } from "@/data/polystyrene-data";
+
+export const metadata: Metadata = {
+  title: "Myths vs Facts",
+  description: "Common misconceptions about polystyrene recycling debunked with science-backed facts. Separate truth from fiction.",
+  openGraph: {
+    title: "Polystyrene Myths vs Facts | PolyRecycle",
+    description: "Common misconceptions about polystyrene recycling debunked with science-backed facts.",
+    images: [{ url: "/images/myths-debunked.jpg" }],
+  },
+};
 
 export default function MythsVsFactsPage() {
   return (

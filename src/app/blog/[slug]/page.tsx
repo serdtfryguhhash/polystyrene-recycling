@@ -22,8 +22,22 @@ export function generateMetadata({ params }: BlogPostPageProps): Metadata {
     return { title: "Post Not Found | PolyRecycle" };
   }
   return {
-    title: `${post.title} | PolyRecycle Blog`,
+    title: post.title,
     description: post.excerpt,
+    openGraph: {
+      title: `${post.title} | PolyRecycle Blog`,
+      description: post.excerpt,
+      type: "article",
+      publishedTime: post.date,
+      tags: post.tags,
+      images: post.image ? [{ url: post.image }] : [],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: post.image ? [post.image] : [],
+    },
   };
 }
 

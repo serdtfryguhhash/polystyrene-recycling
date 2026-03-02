@@ -1,10 +1,25 @@
+import type { Metadata } from "next";
 import { BookOpen } from "lucide-react";
 import BlogCard from "@/components/BlogCard";
+import BlogFilter from "@/components/BlogFilter";
 import { blogPosts } from "@/data/polystyrene-data";
+
+export const metadata: Metadata = {
+  title: "Blog",
+  description: "Stay informed with the latest articles on polystyrene recycling technology, environmental policy, and sustainable practices.",
+  openGraph: {
+    title: "Blog | PolyRecycle",
+    description: "Articles on polystyrene recycling technology, policy, and innovation.",
+  },
+};
 
 export default function BlogPage() {
   const featuredPost = blogPosts.find((post) => post.featured);
   const remainingPosts = blogPosts.filter((post) => !post.featured);
+
+  const categories = Array.from(
+    new Set(blogPosts.map((post) => post.category))
+  );
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -29,12 +44,8 @@ export default function BlogPage() {
         </div>
       )}
 
-      {/* Blog Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {remainingPosts.map((post) => (
-          <BlogCard key={post.slug} post={post} />
-        ))}
-      </div>
+      {/* Search & Filter */}
+      <BlogFilter posts={remainingPosts} categories={categories} />
     </div>
   );
 }

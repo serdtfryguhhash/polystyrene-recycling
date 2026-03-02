@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import ComparisonCard from "@/components/ComparisonCard";
@@ -17,6 +18,16 @@ import {
   MapPin,
   TrendingUp,
 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "About Polystyrene",
+  description: "Learn what polystyrene is, its types (EPS vs XPS), history, common applications, and manufacturing process.",
+  openGraph: {
+    title: "About Polystyrene | PolyRecycle",
+    description: "Learn what polystyrene is, its types (EPS vs XPS), history, and where it is commonly found.",
+    images: [{ url: "/images/hero-about.jpg" }],
+  },
+};
 
 const commonApplications = [
   { name: "Cups & Containers", icon: <Coffee className="w-5 h-5" />, description: "Disposable coffee cups, food takeout containers" },

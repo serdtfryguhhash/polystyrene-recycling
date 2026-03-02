@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -24,6 +25,16 @@ import {
   FlaskConical,
   Scale,
 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "How to Recycle Polystyrene",
+  description: "Step-by-step polystyrene recycling guide: identify, clean, find locations, and transport. Plus recycling methods and state policies.",
+  openGraph: {
+    title: "How to Recycle Polystyrene | PolyRecycle",
+    description: "A complete guide to recycling polystyrene at home with drop-off locations and state policy info.",
+    images: [{ url: "/images/recycling-guide.jpg" }],
+  },
+};
 
 const consumerSteps = [
   {

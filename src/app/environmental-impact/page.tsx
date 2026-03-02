@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { environmentalStats } from "@/data/polystyrene-data";
@@ -11,6 +12,16 @@ import {
   Scale,
   Factory,
 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Environmental Impact",
+  description: "The case for polystyrene recycling over bans. Polystyrene is 100% recyclable, resource efficient, and lighter than alternatives.",
+  openGraph: {
+    title: "The Case for Polystyrene Recycling | PolyRecycle",
+    description: "Polystyrene is 100% recyclable and lighter than every common alternative. Learn why bans do more harm than good.",
+    images: [{ url: "/images/hero-environment.jpg" }],
+  },
+};
 
 const textColorMap: Record<string, string> = {
   emerald: "text-emerald-400",

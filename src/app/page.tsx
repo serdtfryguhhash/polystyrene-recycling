@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
@@ -5,6 +6,7 @@ import StatCard from "@/components/StatCard";
 import FunFactsCarousel from "@/components/FunFactsCarousel";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 import RecyclingMap from "@/components/RecyclingMap";
+import NewsletterSignup from "@/components/NewsletterSignup";
 import { funFacts } from "@/data/polystyrene-data";
 import {
   Recycle,
@@ -18,6 +20,16 @@ import {
   BarChart3,
   ShieldCheck,
 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "PolyRecycle | Polystyrene Recycling Education",
+  description: "Polystyrene is 100% recyclable. Learn why bans do more harm than good and how to recycle polystyrene effectively.",
+  openGraph: {
+    title: "PolyRecycle | Making Polystyrene Recycling Accessible",
+    description: "Polystyrene is 100% recyclable, lighter than paper alternatives, and better for the environment when properly recycled.",
+    images: [{ url: "/images/hero-recycling.jpg" }],
+  },
+};
 
 const quickLinks = [
   {
@@ -201,6 +213,9 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* Newsletter Signup */}
+      <NewsletterSignup />
     </div>
   );
 }
