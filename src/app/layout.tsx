@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import NewsletterSignup from "@/components/NewsletterSignup";
 import ChatBot from "@/components/ChatBot";
 
 const geistSans = localFont({
@@ -54,6 +55,7 @@ export default function RootLayout({
       >
         <Navbar />
         <main className="pt-16">{children}</main>
+        <NewsletterSignup />
         <Footer />
         <ChatBot />
       </body>

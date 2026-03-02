@@ -1,58 +1,117 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
-import { useChat } from "@ai-sdk/react";
-import { TextStreamChatTransport, type UIMessage } from "ai";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { MessageCircle, X, Send, Recycle } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const transport = new TextStreamChatTransport({ api: "/api/chat" });
+interface ChatMessage {
+  id: string;
+  role: "user" | "assistant";
+  content: string;
+}
 
 export default function ChatBot() {
   const [isOpen, setIsOpen] = useState(false);
   const [inputValue, setInputValue] = useState("");
-  const messagesEndRef = useRef<HTMLDivElement>(null);
-
-  const initialMessages: UIMessage[] = [
+  const [messages, setMessages] = useState<ChatMessage[]>([
     {
       id: "welcome",
       role: "assistant",
-      parts: [
-        {
-          type: "text",
-          text: "Hey there! I'm PolystyreneGuy, your friendly recycling expert. Ask me anything about polystyrene recycling, environmental impact, or how to recycle foam products!",
-        },
-      ],
+      content:
+        "Hey there! I'm PolystyreneGuy, your friendly recycling expert. Ask me anything about polystyrene recycling, environmental impact, or how to recycle foam products!",
     },
-  ];
-
-  const { messages, sendMessage, status } = useChat({
-    transport,
-    messages: initialMessages,
-  });
-
-  const isLoading = status === "submitted" || status === "streaming";
+  ]);
+  const [isLoading, setIsLoading] = useState(false);
+  const messagesEndRef = useRef<HTMLDivElement>(null);
+  const abortRef = useRef<AbortController | null>(null);
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!inputValue.trim() || isLoading) return;
-    const message = inputValue;
-    setInputValue("");
-    await sendMessage({ text: message });
-  };
+  const handleSubmit = useCallback(
+    async (e: React.FormEvent) => {
+      e.preventDefault();
+      if (!inputValue.trim() || isLoading) return;
 
-  function getMessageText(message: (typeof messages)[0]): string {
-    return message.parts
-      .filter((p): p is { type: "text"; text: string } => p.type === "text")
-      .map((p) => p.text)
-      .join("");
-  }
+      const userMessage: ChatMessage = {
+        id: `user-${Date.now()}`,
+        role: "user",
+        content: inputValue.trim(),
+      };
+
+      const newMessages = [...messages, userMessage];
+      setMessages(newMessages);
+      setInputValue("");
+      setIsLoading(true);
+
+      // Prepare messages for API (exclude welcome message id, just send role/content)
+      const apiMessages = newMessages.map((m) => ({
+        role: m.role,
+        content: m.content,
+      }));
+
+      try {
+        abortRef.current = new AbortController();
+        const response = await fetch("/api/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ messages: apiMessages }),
+          signal: abortRef.current.signal,
+        });
+
+        if (!response.ok) {
+          throw new Error(`API error: ${response.status}`);
+        }
+
+        // Read the streaming response
+        const reader = response.body?.getReader();
+        const decoder = new TextDecoder();
+        let assistantContent = "";
+
+        const assistantId = `assistant-${Date.now()}`;
+
+        if (reader) {
+          // Add empty assistant message that we'll stream into
+          setMessages((prev) => [
+            ...prev,
+            { id: assistantId, role: "assistant", content: "" },
+          ]);
+
+          while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+            const chunk = decoder.decode(value, { stream: true });
+            assistantContent += chunk;
+            setMessages((prev) =>
+              prev.map((m) =>
+                m.id === assistantId
+                  ? { ...m, content: assistantContent }
+                  : m
+              )
+            );
+          }
+        }
+      } catch (err) {
+        if (err instanceof Error && err.name === "AbortError") return;
+        setMessages((prev) => [
+          ...prev,
+          {
+            id: `error-${Date.now()}`,
+            role: "assistant",
+            content:
+              "Sorry, I had trouble responding. Please try again in a moment!",
+          },
+        ]);
+      } finally {
+        setIsLoading(false);
+        abortRef.current = null;
+      }
+    },
+    [inputValue, isLoading, messages]
+  );
 
   return (
     <>
@@ -99,8 +158,7 @@ export default function ChatBot() {
           {/* Messages */}
           <div className="flex-1 overflow-y-auto p-4 space-y-4">
             {messages.map((message) => {
-              const text = getMessageText(message);
-              if (!text) return null;
+              if (!message.content) return null;
               return (
                 <div
                   key={message.id}
@@ -122,26 +180,27 @@ export default function ChatBot() {
                         : "bg-card border border-border/50 text-foreground rounded-bl-md"
                     )}
                   >
-                    {text}
+                    {message.content}
                   </div>
                 </div>
               );
             })}
 
-            {isLoading && (
-              <div className="flex gap-2 justify-start">
-                <div className="w-7 h-7 rounded-full bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center shrink-0 mt-1">
-                  <Recycle className="w-3.5 h-3.5 text-emerald-400 animate-spin" />
-                </div>
-                <div className="bg-card border border-border/50 rounded-2xl rounded-bl-md px-4 py-3">
-                  <div className="flex items-center gap-1.5">
-                    <div className="w-2 h-2 rounded-full bg-emerald-400/60 animate-bounce [animation-delay:-0.3s]" />
-                    <div className="w-2 h-2 rounded-full bg-emerald-400/60 animate-bounce [animation-delay:-0.15s]" />
-                    <div className="w-2 h-2 rounded-full bg-emerald-400/60 animate-bounce" />
+            {isLoading &&
+              messages[messages.length - 1]?.role !== "assistant" && (
+                <div className="flex gap-2 justify-start">
+                  <div className="w-7 h-7 rounded-full bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center shrink-0 mt-1">
+                    <Recycle className="w-3.5 h-3.5 text-emerald-400 animate-spin" />
+                  </div>
+                  <div className="bg-card border border-border/50 rounded-2xl rounded-bl-md px-4 py-3">
+                    <div className="flex items-center gap-1.5">
+                      <div className="w-2 h-2 rounded-full bg-emerald-400/60 animate-bounce [animation-delay:-0.3s]" />
+                      <div className="w-2 h-2 rounded-full bg-emerald-400/60 animate-bounce [animation-delay:-0.15s]" />
+                      <div className="w-2 h-2 rounded-full bg-emerald-400/60 animate-bounce" />
+                    </div>
                   </div>
                 </div>
-              </div>
-            )}
+              )}
 
             <div ref={messagesEndRef} />
           </div>

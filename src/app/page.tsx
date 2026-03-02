@@ -6,7 +6,7 @@ import StatCard from "@/components/StatCard";
 import FunFactsCarousel from "@/components/FunFactsCarousel";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 import RecyclingMap from "@/components/RecyclingMap";
-import NewsletterSignup from "@/components/NewsletterSignup";
+import BeginnerGuide from "@/components/BeginnerGuide";
 import { funFacts } from "@/data/polystyrene-data";
 import {
   Recycle,
@@ -19,6 +19,8 @@ import {
   ArrowRight,
   BarChart3,
   ShieldCheck,
+  Gamepad2,
+  HelpCircle,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -34,9 +36,21 @@ export const metadata: Metadata = {
 const quickLinks = [
   {
     title: "Fun Facts",
-    description: "Discover surprising statistics and facts about polystyrene production, waste, and recycling.",
+    description: "Discover 50+ surprising statistics and facts about polystyrene production, waste, and recycling.",
     href: "/fun-facts",
     icon: <Brain className="w-6 h-6" />,
+  },
+  {
+    title: "Take the Quiz",
+    description: "Test your polystyrene recycling knowledge with our interactive quiz. How much do you really know?",
+    href: "/quiz",
+    icon: <HelpCircle className="w-6 h-6" />,
+  },
+  {
+    title: "Sorting Game",
+    description: "Play the recycling sorting game! Learn which polystyrene items are recyclable and which aren't.",
+    href: "/games",
+    icon: <Gamepad2 className="w-6 h-6" />,
   },
   {
     title: "Blog",
@@ -144,6 +158,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Beginner's Guide */}
+      <BeginnerGuide />
+
       {/* Fun Facts Carousel */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center mb-10">
@@ -180,6 +197,46 @@ export default function Home() {
         <RecyclingMap />
       </section>
 
+      {/* Interactive Activities Banner */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <Link href="/quiz" className="group block">
+            <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-violet-950/80 via-card to-violet-900/30 border border-violet-500/20 p-8 hover:border-violet-500/40 transition-all">
+              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-violet-500/5 via-transparent to-transparent" />
+              <div className="relative z-10">
+                <HelpCircle className="w-10 h-10 text-violet-400 mb-4" />
+                <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-violet-400 transition-colors">
+                  Take the Quiz
+                </h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  20 questions across 3 difficulty levels. How well do you know polystyrene recycling?
+                </p>
+                <span className="inline-flex items-center gap-1 text-sm text-violet-400 group-hover:translate-x-1 transition-transform">
+                  Start Quiz <ArrowRight className="w-4 h-4" />
+                </span>
+              </div>
+            </div>
+          </Link>
+          <Link href="/games" className="group block">
+            <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-amber-950/80 via-card to-amber-900/30 border border-amber-500/20 p-8 hover:border-amber-500/40 transition-all">
+              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-500/5 via-transparent to-transparent" />
+              <div className="relative z-10">
+                <Gamepad2 className="w-10 h-10 text-amber-400 mb-4" />
+                <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-amber-400 transition-colors">
+                  Play Sorting Game
+                </h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Sort polystyrene items into Recycle or Trash. Learn what&apos;s actually recyclable!
+                </p>
+                <span className="inline-flex items-center gap-1 text-sm text-amber-400 group-hover:translate-x-1 transition-transform">
+                  Play Now <ArrowRight className="w-4 h-4" />
+                </span>
+              </div>
+            </div>
+          </Link>
+        </div>
+      </section>
+
       {/* Quick Links Grid */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
         <div className="text-center mb-10">
@@ -214,8 +271,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Newsletter Signup */}
-      <NewsletterSignup />
     </div>
   );
 }

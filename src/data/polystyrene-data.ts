@@ -273,6 +273,285 @@ export const funFacts: FunFact[] = [
     iconName: "Layers",
     category: "waste",
   },
+  {
+    id: "density-reduction",
+    stat: "98%",
+    unit: "air by volume",
+    description:
+      "Expanded polystyrene (EPS) is about 98% air and only 2% plastic, making it one of the lightest packaging materials and highly efficient to compact for recycling.",
+    iconName: "Wind",
+    category: "science",
+  },
+  {
+    id: "thermal-insulation",
+    stat: "R-4",
+    unit: "per inch",
+    description:
+      "Polystyrene foam has an insulation value of roughly R-4 per inch, which is why it is widely used in building insulation and helps reduce energy consumption in homes.",
+    iconName: "Thermometer",
+    category: "science",
+  },
+  {
+    id: "compaction-volume",
+    stat: "90:1",
+    unit: "compaction ratio",
+    description:
+      "Industrial densifiers can compact EPS foam at ratios up to 90:1, turning a truckload of loose foam into a dense block small enough to fit on a pallet.",
+    iconName: "Minimize2",
+    category: "recycling",
+  },
+  {
+    id: "chemical-formula",
+    stat: "C₈H₈",
+    unit: "monomer",
+    description:
+      "Polystyrene is made from the monomer styrene (C₈H₈), a naturally occurring substance found in small amounts in foods like strawberries, cinnamon, and coffee beans.",
+    iconName: "Atom",
+    category: "science",
+  },
+  {
+    id: "melting-point",
+    stat: "240°C",
+    unit: "melting point",
+    description:
+      "General-purpose polystyrene melts at around 240°C (464°F). During recycling, the material is heated just enough to be remolded into new products without degrading its quality.",
+    iconName: "Flame",
+    category: "science",
+  },
+  {
+    id: "eps-resin-types",
+    stat: "6",
+    unit: "resin code",
+    description:
+      "Polystyrene is classified as resin identification code #6. Knowing this number helps consumers sort it correctly into recycling streams where programs accept it.",
+    iconName: "Tag",
+    category: "recycling",
+  },
+  {
+    id: "transport-efficiency",
+    stat: "40x",
+    unit: "less fuel",
+    description:
+      "Compacted polystyrene uses up to 40 times less transport fuel than loose foam, dramatically lowering the carbon footprint of getting recycled material to processing facilities.",
+    iconName: "Truck",
+    category: "environment",
+  },
+  {
+    id: "closed-loop-potential",
+    stat: "100%",
+    unit: "recyclable",
+    description:
+      "Polystyrene is a thermoplastic, meaning it can theoretically be melted and reformed an unlimited number of times without significant loss of structural properties.",
+    iconName: "Recycle",
+    category: "recycling",
+  },
+  {
+    id: "drop-off-locations",
+    stat: "1,000+",
+    unit: "U.S. drop-off sites",
+    description:
+      "There are over 1,000 foam drop-off recycling locations across the United States, and the number continues to grow as communities invest in polystyrene recovery programs.",
+    iconName: "Map",
+    category: "recycling",
+  },
+  {
+    id: "water-resistance",
+    stat: "0%",
+    unit: "water absorption",
+    description:
+      "Polystyrene is highly water-resistant and does not absorb moisture, which makes it ideal for protecting goods during shipping and easier to clean for recycling.",
+    iconName: "Droplets",
+    category: "science",
+  },
+  {
+    id: "picture-frame-reuse",
+    stat: "1,000+",
+    unit: "products made",
+    description:
+      "Recycled polystyrene is used to make over a thousand different products including picture frames, crown molding, park benches, and seedling trays.",
+    iconName: "Package",
+    category: "recycling",
+  },
+  {
+    id: "energy-content",
+    stat: "16,000",
+    unit: "BTU per pound",
+    description:
+      "Polystyrene contains roughly 16,000 BTUs per pound of energy. When mechanical recycling is not available, this energy can be recovered through waste-to-energy facilities.",
+    iconName: "Zap",
+    category: "science",
+  },
+  {
+    id: "food-safety-record",
+    stat: "50+",
+    unit: "years of FDA approval",
+    description:
+      "The FDA has approved polystyrene for food-contact use for over 50 years. Recycled food-grade polystyrene can be processed back into safe food packaging.",
+    iconName: "Shield",
+    category: "production",
+  },
+  {
+    id: "lightweight-savings",
+    stat: "70%",
+    unit: "weight reduction",
+    description:
+      "EPS packaging weighs up to 70% less than alternative materials like molded paper pulp, which means lower shipping emissions and reduced transportation costs.",
+    iconName: "Scale",
+    category: "environment",
+  },
+  {
+    id: "global-eps-capacity",
+    stat: "7M+",
+    unit: "tons/year capacity",
+    description:
+      "Global EPS production capacity exceeds 7 million tons per year. As recycling infrastructure expands, a growing share of this material is being recovered and reprocessed.",
+    iconName: "Factory",
+    category: "production",
+  },
+  {
+    id: "job-creation",
+    stat: "10,000+",
+    unit: "recycling jobs",
+    description:
+      "The polystyrene recycling industry supports tens of thousands of jobs worldwide, from collection and sorting to processing and manufacturing of recycled products.",
+    iconName: "Users",
+    category: "recycling",
+  },
+  {
+    id: "school-programs",
+    stat: "500+",
+    unit: "school programs",
+    description:
+      "Over 500 schools across North America have implemented foam tray recycling programs, teaching children about sustainability while diverting waste from landfills.",
+    iconName: "Award",
+    category: "recycling",
+  },
+  {
+    id: "packaging-protection",
+    stat: "99%",
+    unit: "damage prevention",
+    description:
+      "EPS packaging prevents up to 99% of product damage during shipping for fragile goods like electronics, reducing the waste and emissions caused by returns and replacements.",
+    iconName: "Shield",
+    category: "production",
+  },
+  {
+    id: "dissolution-recycling",
+    stat: "New",
+    unit: "technology",
+    description:
+      "Dissolution recycling uses solvents to separate pure polystyrene from contaminants, producing near-virgin quality material and opening new pathways for hard-to-recycle foam.",
+    iconName: "Beaker",
+    category: "recycling",
+  },
+  {
+    id: "styrene-natural",
+    stat: "50+",
+    unit: "natural sources",
+    description:
+      "Styrene occurs naturally in over 50 foods including wheat, peanuts, and beef. The compound is metabolized by the body and does not accumulate.",
+    iconName: "Leaf",
+    category: "science",
+  },
+  {
+    id: "building-insulation",
+    stat: "30%",
+    unit: "energy savings",
+    description:
+      "Buildings insulated with EPS or XPS polystyrene foam can save up to 30% on heating and cooling costs, reducing overall energy demand and greenhouse gas emissions.",
+    iconName: "Building",
+    category: "environment",
+  },
+  {
+    id: "eps-lifespan",
+    stat: "50+",
+    unit: "years of service",
+    description:
+      "EPS insulation installed in buildings can maintain its performance for over 50 years. At end of life, it can be removed and recycled into new insulation or products.",
+    iconName: "Clock",
+    category: "production",
+  },
+  {
+    id: "water-savings",
+    stat: "80%",
+    unit: "less water used",
+    description:
+      "Manufacturing EPS uses up to 80% less water compared to producing equivalent paper-based packaging, making it a surprisingly water-efficient material choice.",
+    iconName: "Droplets",
+    category: "environment",
+  },
+  {
+    id: "collection-growth",
+    stat: "15%",
+    unit: "annual increase",
+    description:
+      "Polystyrene recycling collection rates in the U.S. have been growing by roughly 15% per year as more municipalities add foam to their accepted materials lists.",
+    iconName: "TrendingDown",
+    category: "recycling",
+  },
+  {
+    id: "recycled-pellet-value",
+    stat: "$500+",
+    unit: "per ton",
+    description:
+      "Recycled polystyrene pellets can sell for over $500 per ton on the commodity market, making foam recovery economically viable when proper infrastructure is in place.",
+    iconName: "DollarSign",
+    category: "recycling",
+  },
+  {
+    id: "solar-panel-use",
+    stat: "Growing",
+    unit: "application",
+    description:
+      "Recycled polystyrene is increasingly used as lightweight backing material in solar panel installations, giving old foam a second life in renewable energy systems.",
+    iconName: "Sun",
+    category: "recycling",
+  },
+  {
+    id: "greenhouse-growing",
+    stat: "Millions",
+    unit: "seedling trays",
+    description:
+      "Recycled polystyrene is widely used to make seedling trays for greenhouses and nurseries, supporting agriculture while keeping foam out of landfills.",
+    iconName: "TreePine",
+    category: "recycling",
+  },
+  {
+    id: "warehouse-usage",
+    stat: "60%",
+    unit: "of cold storage",
+    description:
+      "About 60% of cold storage and refrigerated warehouse facilities use polystyrene insulation panels, and these panels can be recycled when facilities are renovated.",
+    iconName: "Warehouse",
+    category: "production",
+  },
+  {
+    id: "pyrolysis-innovation",
+    stat: "95%",
+    unit: "styrene recovery",
+    description:
+      "Advanced pyrolysis technology can recover up to 95% of styrene monomer from waste polystyrene, enabling true circular recycling back into virgin-quality plastic.",
+    iconName: "Lightbulb",
+    category: "recycling",
+  },
+  {
+    id: "medical-packaging",
+    stat: "Critical",
+    unit: "healthcare role",
+    description:
+      "EPS is essential for shipping temperature-sensitive vaccines and medical supplies. After use, these medical coolers can be collected and recycled through specialized programs.",
+    iconName: "Heart",
+    category: "production",
+  },
+  {
+    id: "cement-additive",
+    stat: "Lighter",
+    unit: "concrete mix",
+    description:
+      "Crushed recycled EPS beads are mixed into lightweight concrete, reducing building weight by up to 25% while providing thermal insulation and giving foam waste a second life.",
+    iconName: "Hammer",
+    category: "recycling",
+  },
 ];
 
 // ===== BLOG POSTS =====

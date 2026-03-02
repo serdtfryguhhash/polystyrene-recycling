@@ -14,7 +14,7 @@ export default function FunFactsPage() {
   const filteredFacts =
     activeCategory === "All"
       ? funFacts
-      : funFacts.filter((f) => f.category === activeCategory);
+      : funFacts.filter((f) => f.category === activeCategory.toLowerCase());
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
