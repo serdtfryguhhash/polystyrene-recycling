@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Brain } from "lucide-react";
 import FactCard from "@/components/FactCard";
 import { funFacts } from "@/data/polystyrene-data";
@@ -29,6 +30,19 @@ export default function FunFactsPage() {
           Discover surprising statistics and little-known facts about
           polystyrene production, recycling, and its environmental impact.
         </p>
+      </div>
+
+      {/* Hero Image */}
+      <div className="relative w-full h-48 md:h-64 rounded-2xl overflow-hidden mb-12">
+        <Image
+          src="/images/hero-recycling.jpg"
+          alt="Fun facts about polystyrene recycling"
+          width={1200}
+          height={600}
+          unoptimized
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-primary/20" />
       </div>
 
       {/* Category Filter */}

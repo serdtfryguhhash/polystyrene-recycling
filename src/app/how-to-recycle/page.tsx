@@ -7,6 +7,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import ProcessStep from "@/components/ProcessStep";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 import RecyclingMap from "@/components/RecyclingMap";
 import StatePolicyTabs from "@/components/StatePolicyTabs";
 import { recyclingMethods, policyData } from "@/data/polystyrene-data";
@@ -99,6 +100,26 @@ export default function HowToRecyclePage() {
               icon={step.icon}
             />
           ))}
+        </div>
+      </section>
+
+      {/* Watch How It's Done */}
+      <section className="mb-16">
+        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
+          Watch How It&apos;s Done
+        </h2>
+        <p className="text-muted-foreground mb-8">
+          See the polystyrene recycling process in action.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <YouTubeEmbed
+            videoId="JxO_601oru8"
+            title="Chick-fil-A Polystyrene Cup Recycling"
+          />
+          <YouTubeEmbed
+            videoId="9EQhl69naqE"
+            title="EPS Foam Recycling at Scale"
+          />
         </div>
       </section>
 

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { environmentalStats } from "@/data/polystyrene-data";
 import {
@@ -39,6 +40,19 @@ export default function EnvironmentalImpactPage() {
           packaging waste. It simply replaces it with heavier, more
           resource intensive options that often cause greater environmental harm.
         </p>
+      </div>
+
+      {/* Hero Image */}
+      <div className="relative w-full h-64 md:h-80 rounded-2xl overflow-hidden mb-16">
+        <Image
+          src="/images/hero-environment.jpg"
+          alt="Environmental sustainability and polystyrene recycling"
+          width={1200}
+          height={600}
+          unoptimized
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-emerald-900/40" />
       </div>
 
       {/* Stats Dashboard */}

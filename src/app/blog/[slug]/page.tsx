@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Badge } from "@/components/ui/badge";
 import { blogPosts } from "@/data/polystyrene-data";
@@ -50,6 +51,21 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         <ArrowLeft className="w-4 h-4" />
         Back to Blog
       </Link>
+
+      {/* Hero Image */}
+      {post.image && (
+        <div className="relative w-full h-64 md:h-80 rounded-2xl overflow-hidden mb-10">
+          <Image
+            src={post.image}
+            alt={post.imageAlt || post.title}
+            width={1200}
+            height={600}
+            unoptimized
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
+        </div>
+      )}
 
       {/* Article header */}
       <article>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import ComparisonCard from "@/components/ComparisonCard";
 import { polystyreneTypes } from "@/data/polystyrene-data";
@@ -59,6 +60,19 @@ export default function AboutPage() {
           Understanding its properties, types, and lifecycle is the first step
           toward making informed recycling decisions.
         </p>
+      </div>
+
+      {/* Hero Image */}
+      <div className="relative w-full h-64 md:h-80 rounded-2xl overflow-hidden mb-16">
+        <Image
+          src="/images/hero-about.jpg"
+          alt="Learning about polystyrene and its properties"
+          width={1200}
+          height={600}
+          unoptimized
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-primary/20" />
       </div>
 
       {/* What is Polystyrene? */}

@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import StatCard from "@/components/StatCard";
 import FunFactsCarousel from "@/components/FunFactsCarousel";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 import RecyclingMap from "@/components/RecyclingMap";
 import { funFacts } from "@/data/polystyrene-data";
 import {
@@ -142,6 +143,24 @@ export default function Home() {
           </p>
         </div>
         <FunFactsCarousel facts={funFacts.slice(0, 6)} />
+      </section>
+
+      {/* Video Section */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-bold text-foreground mb-3">
+            See Recycling in Action
+          </h2>
+          <p className="text-muted-foreground">
+            Watch how polystyrene cups are recycled into new products
+          </p>
+        </div>
+        <div className="max-w-4xl mx-auto">
+          <YouTubeEmbed
+            videoId="JxO_601oru8"
+            title="Chick-fil-A Polystyrene Cup Recycling Process"
+          />
+        </div>
       </section>
 
       {/* Recycling Map */}

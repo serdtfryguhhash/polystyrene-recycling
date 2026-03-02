@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Card, CardContent, CardHeader, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Clock, Calendar } from "lucide-react";
@@ -8,10 +9,38 @@ interface BlogCardProps {
   post: BlogPost;
 }
 
+const categoryGradients: Record<string, string> = {
+  guide: "from-emerald-600/80 to-teal-600/80",
+  myths: "from-purple-600/80 to-indigo-600/80",
+  diy: "from-orange-600/80 to-amber-600/80",
+  policy: "from-blue-600/80 to-cyan-600/80",
+  technology: "from-cyan-600/80 to-blue-600/80",
+  innovation: "from-green-600/80 to-emerald-600/80",
+  environment: "from-teal-600/80 to-green-600/80",
+  economics: "from-emerald-600/80 to-cyan-600/80",
+};
+
 export default function BlogCard({ post }: BlogCardProps) {
+  const gradient = categoryGradients[post.category] || "from-emerald-600/80 to-teal-600/80";
+
   return (
     <Link href={`/blog/${post.slug}`} className="block group h-full">
-      <Card className="bg-card border-border/50 hover:border-primary/30 hover:scale-[1.01] transition-all duration-300 h-full flex flex-col">
+      <Card className="bg-card border-border/50 hover:border-primary/30 hover:scale-[1.01] transition-all duration-300 h-full flex flex-col overflow-hidden">
+        {/* Image Banner */}
+        {post.image && (
+          <div className="relative h-48 overflow-hidden">
+            <Image
+              src={post.image}
+              alt={post.imageAlt || post.title}
+              width={1200}
+              height={600}
+              unoptimized
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div className={`absolute inset-0 bg-gradient-to-t ${gradient} opacity-60`} />
+          </div>
+        )}
+
         <CardHeader className="pb-3">
           <div className="flex items-center gap-2 flex-wrap">
             <Badge

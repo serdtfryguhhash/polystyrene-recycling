@@ -20,6 +20,8 @@ export interface BlogPost {
   tags: string[];
   content: string;
   featured?: boolean;
+  image?: string;
+  imageAlt?: string;
 }
 
 export interface MythFact {
@@ -317,6 +319,8 @@ Chemical recycling takes a fundamentally different approach by breaking polystyr
 The EPS Industry Alliance operates a comprehensive map of drop-off locations across the United States. Additionally, many mail and packaging stores accept clean EPS packaging materials for reuse. Some municipalities have begun adding polystyrene collection to their special recycling events, even if they do not include it in regular curbside pickup.
 
 The infrastructure for polystyrene recycling is growing every year. New facilities are opening, chemical recycling technologies are scaling up, and the 2025 milestone of food-grade recycled polystyrene has given the industry renewed momentum. By taking the time to properly recycle your polystyrene waste, you are contributing to a system that gets stronger with every participant.`,
+    image: "/images/recycling-guide.jpg",
+    imageAlt: "Polystyrene recycling bins and containers",
   },
   {
     slug: "5-myths-about-styrofoam-debunked",
@@ -348,6 +352,8 @@ Some people assume that polystyrene will simply break down over time like a bana
 ## Myth 5: Polystyrene Recycling Is Too Expensive to Ever Work
 
 The economics are challenging but rapidly improving. Small-scale polystyrene recycling can cost over $1,000 per ton, compared to roughly $30-50 per ton for landfill disposal. However, several innovations are changing the equation. On-site compaction machines reduce EPS volume by 50:1, dramatically cutting transportation costs. Chemical recycling produces valuable styrene monomer that commands higher market prices. The global EPS recycling market has already reached $0.7 billion and is growing annually. As more facilities open and technology improves, the cost gap will continue to narrow. History has shown that recycling economics improve with scale, and the same trajectory that made aluminum and paper recycling commonplace is now underway for polystyrene.`,
+    image: "/images/myths-debunked.jpg",
+    imageAlt: "Research and fact-checking about styrofoam recycling",
   },
   {
     slug: "creative-ways-to-reuse-styrofoam-at-home",
@@ -399,6 +405,8 @@ The economics are challenging but rapidly improving. Small-scale polystyrene rec
 **15. Shipping Protection.** When you need to mail fragile items, custom-cut polystyrene pieces provide better protection than crumpled newspaper. Shape it to cradle the item snugly inside the box for professional-quality packing at zero cost.
 
 These ideas represent just the beginning. The key principle is to think of polystyrene as a resource rather than waste. Each reuse delays the material's journey to the landfill and reduces demand for new packaging materials. And when your polystyrene finally reaches the end of its useful life at home, remember to seek out a dedicated recycling drop-off location rather than placing it in your curbside bin.`,
+    image: "/images/diy-reuse.jpg",
+    imageAlt: "Creative DIY projects reusing styrofoam materials",
   },
   {
     slug: "state-by-state-polystyrene-bans-2025",
@@ -448,6 +456,8 @@ These ideas represent just the beginning. The key principle is to think of polys
 The polystyrene industry has responded to these bans by investing heavily in recycling infrastructure, and the results speak for themselves. Advanced chemical recycling now produces food-grade recycled polystyrene at commercial scale. Compaction technology reduces EPS volume by 50:1, making collection and transport economically viable. The global EPS recycling market has already reached $0.7 billion and continues to grow.
 
 These bans, while well-intentioned, are increasingly misguided. They eliminate a material that is 100% recyclable, force businesses to switch to alternatives that often have higher environmental footprints, and remove the economic incentive to build recycling infrastructure. Rather than banning polystyrene, states should invest in recycling programs that capture this valuable material and turn it into new products. The technology exists. The market demand exists. What is needed is infrastructure investment, not prohibition.`,
+    image: "/images/state-bans.jpg",
+    imageAlt: "US Capitol building representing polystyrene policy",
   },
   {
     slug: "chemical-recycling-breakthroughs-turning-waste-into-fuel",
@@ -484,6 +494,8 @@ Researchers at various universities have also demonstrated the conversion of pol
 Despite these breakthroughs, chemical recycling faces real challenges. Energy input requirements are significant, as heating reactors to 400-plus degrees consumes substantial power. The capital cost of building commercial facilities runs into tens of millions of dollars. Emissions management requires sophisticated scrubbing and monitoring systems. And the variable quality of waste feedstock means that process control must be highly adaptive.
 
 The economics are improving, however. As landfill costs rise, polystyrene bans spread, and virgin styrene prices increase, the business case for chemical recycling strengthens. Major petrochemical companies have begun investing in these technologies, providing the capital and engineering expertise needed to scale up. The promise of a circular economy for polystyrene, where waste becomes feedstock in an endless loop, is no longer a theoretical concept but an emerging industrial reality.`,
+    image: "/images/chemical-recycling.jpg",
+    imageAlt: "Chemical recycling laboratory equipment",
   },
   {
     slug: "food-grade-recycled-polystyrene-2025-milestone",
@@ -519,6 +531,8 @@ With food-grade certification, a polystyrene yogurt cup can now be recycled back
 Industry analysts expect food-grade recycled polystyrene to begin appearing in consumer packaging within the next twelve to eighteen months as production scales up and supply chains develop. Several major food and beverage companies have already announced commitments to incorporate recycled polystyrene into their packaging portfolios, driven by both sustainability goals and consumer demand.
 
 The success of food-grade recycled polystyrene also serves as a proof of concept for other plastics. If depolymerization can achieve food-grade purity for polystyrene, similar approaches may work for other polymer types, potentially unlocking circular recycling pathways across the plastics industry. What started as a polystyrene-specific breakthrough could catalyze a broader transformation in how we recover and reuse plastic materials.`,
+    image: "/images/food-grade.jpg",
+    imageAlt: "Food-grade recycled polystyrene packaging",
   },
   {
     slug: "polystyrene-and-ocean-pollution-the-hidden-crisis",
@@ -560,6 +574,8 @@ Meanwhile, banning polystyrene removes the economic incentive to build recycling
 The solution to polystyrene ocean pollution is clear: expand recycling access from 32% to 100% of the population, invest in compaction and chemical recycling facilities, and create convenient collection programs that make recycling easier than littering. The global EPS recycling market has already reached $0.7 billion and is growing every year. The industry is investing, the technology is proven, and the economics are improving rapidly.
 
 Polystyrene is a valuable, recyclable resource. The answer is not to ban it. The answer is to recycle it.`,
+    image: "/images/ocean-recycling.jpg",
+    imageAlt: "Ocean conservation and polystyrene recycling",
   },
   {
     slug: "the-economics-of-polystyrene-recycling",
@@ -599,6 +615,8 @@ Polystyrene recycling facilities create jobs in collection, sorting, machine ope
 ## The Business Case
 
 Is polystyrene recycling worth it? The honest answer is that it depends on the specific operation, technology, and scale. Small-scale operations relying solely on manual collection of uncompacted EPS will struggle economically. But facilities that combine efficient collection with compaction technology, process guaranteed feedstock from commercial sources, and sell into growing markets for recycled polystyrene products can and do operate profitably. The trajectory of the industry, with rising landfill costs, expanding regulations, improving technology, and growing demand, points toward increasingly favorable economics for those who invest now.`,
+    image: "/images/economics.jpg",
+    imageAlt: "Economics and financial analysis of recycling",
   },
 ];
 

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ShieldCheck } from "lucide-react";
 import MythCard from "@/components/MythCard";
 import { mythsFacts } from "@/data/polystyrene-data";
@@ -20,6 +21,19 @@ export default function MythsVsFactsPage() {
         <p className="text-sm text-muted-foreground mt-4">
           Click on each myth to reveal the truth
         </p>
+      </div>
+
+      {/* Hero Image */}
+      <div className="relative w-full h-48 md:h-64 rounded-2xl overflow-hidden mb-12">
+        <Image
+          src="/images/hero-factory.jpg"
+          alt="Polystyrene manufacturing and recycling facility"
+          width={1200}
+          height={600}
+          unoptimized
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-primary/20" />
       </div>
 
       {/* Myths Grid */}
