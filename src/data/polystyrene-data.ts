@@ -84,10 +84,10 @@ export const funFacts: FunFact[] = [
   },
   {
     id: "global-production",
-    stat: "14M",
+    stat: "15M",
     unit: "tons/year",
     description:
-      "Over 14 million tons of polystyrene are produced globally each year, making it one of the most common plastics.",
+      "Over 15 million tons of polystyrene are produced globally each year, accounting for roughly 5% of all plastics manufactured worldwide.",
     iconName: "Factory",
     category: "production",
   },
@@ -102,10 +102,10 @@ export const funFacts: FunFact[] = [
   },
   {
     id: "recycling-rate",
-    stat: "<1%",
+    stat: "~5%",
     unit: "recycled",
     description:
-      "Less than 1% of polystyrene waste is recycled in the United States, despite being technically recyclable.",
+      "Approximately 5% of polystyrene waste is recycled in the United States, despite being technically 100% recyclable.",
     iconName: "Recycle",
     category: "recycling",
   },
@@ -129,10 +129,10 @@ export const funFacts: FunFact[] = [
   },
   {
     id: "landfill-volume",
-    stat: "30%",
-    unit: "of landfills",
+    stat: "25%",
+    unit: "landfill volume",
     description:
-      "Polystyrene and other foam plastics account for roughly 30% of landfill volume in the United States.",
+      "Expanded polystyrene and foam plastics make up a significant portion of landfill volume due to their bulky, lightweight nature — despite representing less than 1% of landfill weight.",
     iconName: "Trash2",
     category: "waste",
   },
@@ -156,10 +156,10 @@ export const funFacts: FunFact[] = [
   },
   {
     id: "recycling-cost",
-    stat: "$3,000",
+    stat: "$1,000+",
     unit: "per ton",
     description:
-      "The average cost of recycling polystyrene is around $3,000 per ton, compared to $30 per ton for disposal in landfills.",
+      "Polystyrene recycling can cost over $1,000 per ton at small scale, compared to $30-50 per ton for landfill disposal — though costs drop significantly with compaction technology and larger operations.",
     iconName: "DollarSign",
     category: "recycling",
   },
@@ -258,7 +258,7 @@ export const funFacts: FunFact[] = [
     stat: "100K+",
     unit: "animals/year",
     description:
-      "Over 100,000 marine animals die each year from ingesting or becoming entangled in polystyrene debris.",
+      "Over 100,000 marine animals die each year from plastic ingestion or entanglement. Polystyrene is one of the top contributors, ranking as the #2 most common beach debris item.",
     iconName: "Fish",
     category: "environment",
   },
@@ -290,7 +290,7 @@ export const blogPosts: BlogPost[] = [
 
 ## Why Is Polystyrene Hard to Recycle?
 
-The difficulties begin with the material itself. Expanded polystyrene (EPS) is roughly 95% air by volume, meaning a truckload of foam cups contains very little actual recyclable material relative to the space it occupies. Transportation costs become prohibitively expensive when you are essentially hauling air across long distances. Contamination is another major hurdle \u2014 food residue from takeout containers and coffee cups makes the material difficult to process without thorough cleaning. Finally, the economics are stark: recycling polystyrene costs approximately $3,000 per ton, while landfill disposal costs just $30 per ton.
+The difficulties begin with the material itself. Expanded polystyrene (EPS) is roughly 95% air by volume, meaning a truckload of foam cups contains very little actual recyclable material relative to the space it occupies. Transportation costs become prohibitively expensive when you are essentially hauling air across long distances. Contamination is another major hurdle \u2014 food residue from takeout containers and coffee cups makes the material difficult to process without thorough cleaning. Finally, the economics are stark: recycling polystyrene can cost over $1,000 per ton at small scale, while landfill disposal costs just $30-50 per ton.
 
 ## How to Identify Polystyrene
 
@@ -347,7 +347,7 @@ Some people assume that polystyrene will simply break down over time like a bana
 
 ## Myth 5: Polystyrene Recycling Is Too Expensive to Ever Work
 
-The economics are challenging but rapidly improving. Traditional polystyrene recycling costs around $3,000 per ton, compared to roughly $30 per ton for landfill disposal. However, several innovations are changing the equation. On-site compaction machines reduce EPS volume by 50:1, dramatically cutting transportation costs. Chemical recycling produces valuable styrene monomer that commands higher market prices. The global EPS recycling market has already reached $0.7 billion and is growing annually. As more facilities open and technology improves, the cost gap will continue to narrow. History has shown that recycling economics improve with scale \u2014 the same trajectory that made aluminum and paper recycling commonplace is now underway for polystyrene.`,
+The economics are challenging but rapidly improving. Small-scale polystyrene recycling can cost over $1,000 per ton, compared to roughly $30-50 per ton for landfill disposal. However, several innovations are changing the equation. On-site compaction machines reduce EPS volume by 50:1, dramatically cutting transportation costs. Chemical recycling produces valuable styrene monomer that commands higher market prices. The global EPS recycling market has already reached $0.7 billion and is growing annually. As more facilities open and technology improves, the cost gap will continue to narrow. History has shown that recycling economics improve with scale \u2014 the same trajectory that made aluminum and paper recycling commonplace is now underway for polystyrene.`,
   },
   {
     slug: "creative-ways-to-reuse-styrofoam-at-home",
@@ -545,7 +545,7 @@ Studies of the Great Pacific Garbage Patch \u2014 the massive concentration of m
 
 ## Impact on Marine Life
 
-The toll on marine animals is staggering. Over 100,000 marine animals die each year from ingesting polystyrene debris or becoming entangled in larger pieces. Sea turtles are particularly vulnerable because floating polystyrene fragments resemble jellyfish, a primary food source. Seabirds frequently mistake colorful polystyrene pieces for food and feed them to their chicks, causing starvation and toxic exposure.
+The toll on marine animals is staggering. Over 100,000 marine animals die each year from plastic ingestion or entanglement, with polystyrene being a significant contributor. Sea turtles are particularly vulnerable because floating polystyrene fragments resemble jellyfish, a primary food source. Seabirds frequently mistake colorful polystyrene pieces for food and feed them to their chicks, causing starvation and toxic exposure.
 
 Fish and shellfish that ingest microplastics accumulate the particles in their tissues. Since polystyrene can absorb persistent organic pollutants from seawater \u2014 concentrating these toxins at levels far higher than the surrounding water \u2014 marine animals that eat these particles receive a concentrated dose of harmful chemicals. These contaminated organisms then enter the food chain, eventually reaching human dinner tables through commercial fishing and aquaculture.
 
@@ -574,7 +574,7 @@ Perhaps most importantly, improved recycling infrastructure ensures that polysty
 
 ## The Cost Gap
 
-The numbers are striking. Recycling polystyrene costs approximately $3,000 per ton, while disposing of it in a landfill costs roughly $30 per ton. That hundredfold cost difference is the central challenge facing the industry. The expense comes from several factors. Transportation is the biggest culprit \u2014 expanded polystyrene is 95% air, meaning trucks carry mostly empty space. A full trailer of uncompacted EPS foam cups might contain just a few hundred pounds of actual material. Sorting and contamination removal add further costs, as food-soiled containers must be cleaned before processing. The specialized equipment needed for recycling, whether compactors, extruders, or chemical reactors, requires significant capital investment.
+The numbers are striking. Recycling polystyrene can cost over $1,000 per ton at small scale, while disposing of it in a landfill costs roughly $30-50 per ton. That significant cost difference is the central challenge facing the industry. The expense comes from several factors. Transportation is the biggest culprit \u2014 expanded polystyrene is 95% air, meaning trucks carry mostly empty space. A full trailer of uncompacted EPS foam cups might contain just a few hundred pounds of actual material. Sorting and contamination removal add further costs, as food-soiled containers must be cleaned before processing. The specialized equipment needed for recycling, whether compactors, extruders, or chemical reactors, requires significant capital investment.
 
 ## Why Volume Matters
 
@@ -650,7 +650,7 @@ export const mythsFacts: MythFact[] = [
     myth: "It's too expensive to ever make polystyrene recycling viable",
     fact: "New compaction and chemical technologies are rapidly reducing recycling costs",
     explanation:
-      "While traditional recycling costs around $3,000/ton compared to $30 for landfill disposal, innovations like on-site compaction (reducing volume by 50:1), improved collection logistics, and chemical recycling are dramatically improving the economics. The $0.7B market is growing annually.",
+      "While small-scale recycling can cost $1,000+/ton at small scale compared to $30-50 for landfill disposal, innovations like on-site compaction (reducing volume by 50:1), improved collection logistics, and chemical recycling are dramatically improving the economics. Costs drop significantly with scale, and the $0.7B market is growing annually.",
     iconName: "DollarSign",
   },
   {
@@ -927,9 +927,9 @@ export const environmentalStats: EnvironmentalStat[] = [
   {
     id: "landfill-share",
     label: "Landfill Volume",
-    value: "30%",
+    value: "~25%",
     description:
-      "Polystyrene products account for approximately 30% of all landfill space in the United States.",
+      "Foam plastics including polystyrene contribute significantly to landfill volume due to their extremely low density and resistance to compression.",
     iconName: "Trash2",
     color: "#EF4444",
   },
@@ -974,7 +974,7 @@ export const environmentalStats: EnvironmentalStat[] = [
     label: "Marine Animal Deaths",
     value: "100,000+/year",
     description:
-      "Over 100,000 marine animals die annually from polystyrene ingestion or entanglement.",
+      "Over 100,000 marine animals die annually from plastic ingestion or entanglement, with polystyrene fragments among the most common debris items found.",
     iconName: "Fish",
     color: "#EF4444",
   },

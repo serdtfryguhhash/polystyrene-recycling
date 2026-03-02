@@ -80,7 +80,7 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10">
-              Less than 1% of polystyrene is recycled. Learn how you can make a
+              Less than 5% of polystyrene is recycled in the US. Learn how you can make a
               difference through education, action, and community involvement.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -111,10 +111,10 @@ export default function Home() {
             description="Styrofoam cups thrown away annually in the US"
           />
           <StatCard
-            stat="<1%"
+            stat="~5%"
             label="Recycled"
             icon={<Recycle className="w-6 h-6" />}
-            description="Of polystyrene actually gets recycled"
+            description="Of US polystyrene waste is recycled"
           />
           <StatCard
             stat="500+"
@@ -123,7 +123,7 @@ export default function Home() {
             description="Time for polystyrene to break down in landfills"
           />
           <StatCard
-            stat="14M"
+            stat="15M"
             label="Tons/Year"
             icon={<Factory className="w-6 h-6" />}
             description="Polystyrene produced globally each year"

@@ -32,7 +32,7 @@ const industryStats = [
   { value: "$0.7B", label: "US Market Value", icon: <TrendingUp className="w-5 h-5" />, description: "Annual market for recycled polystyrene products" },
   { value: "32%", label: "Recycling Access", icon: <Users className="w-5 h-5" />, description: "Of Americans have access to PS recycling" },
   { value: "12+", label: "State Bans", icon: <MapPin className="w-5 h-5" />, description: "States with polystyrene restrictions" },
-  { value: "14M", label: "Tons/Year", icon: <Factory className="w-5 h-5" />, description: "Global annual polystyrene production" },
+  { value: "15M", label: "Tons/Year", icon: <Factory className="w-5 h-5" />, description: "Global annual polystyrene production" },
 ];
 
 const manufacturingSteps = [

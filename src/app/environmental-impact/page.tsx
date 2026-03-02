@@ -87,10 +87,10 @@ export default function EnvironmentalImpactPage() {
             </div>
             <div className="space-y-4">
               <p className="text-muted-foreground leading-relaxed">
-                Polystyrene occupies approximately <strong className="text-foreground">30% of all landfill space
-                </strong> worldwide, making it one of the single largest contributors to
-                landfill volume. Despite being lightweight, its bulky nature
-                means it takes up disproportionate space that could be used for
+                Foam plastics including polystyrene occupy approximately <strong className="text-foreground">25% of landfill volume
+                </strong>, making them among the largest contributors to
+                landfill space. Despite representing less than 1% of landfill weight, their bulky, low-density nature
+                means they take up disproportionate space that could be used for
                 biodegradable waste.
               </p>
               <p className="text-muted-foreground leading-relaxed">
@@ -100,8 +100,8 @@ export default function EnvironmentalImpactPage() {
                 becoming microplastics that can leach into soil and groundwater.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                The problem is compounded by the fact that less than 1% of
-                polystyrene waste is recycled. The remaining 99% ends up in
+                The problem is compounded by the fact that under 5% of
+                polystyrene waste is recycled in the US. The vast majority ends up in
                 landfills, incinerators, or -- increasingly -- in natural
                 environments where it causes severe ecological damage.
               </p>
@@ -113,9 +113,9 @@ export default function EnvironmentalImpactPage() {
                 Landfill Impact Facts
               </h3>
               {[
-                "30% of landfill volume is polystyrene and foam products",
+                "~25% of landfill volume is foam plastics including polystyrene",
                 "500+ years to decompose in landfill conditions",
-                "Less than 1% recycling rate in the United States",
+                "Under 5% recycling rate in the United States",
                 "Microplastics from degradation contaminate soil and water",
                 "Volume cannot be compacted effectively in landfills",
                 "Leachate from landfills can carry styrene compounds",
@@ -140,7 +140,7 @@ export default function EnvironmentalImpactPage() {
               </h3>
               {[
                 "#2 most common debris found on beaches worldwide",
-                "100,000+ marine animals killed annually by plastic pollution",
+                "100,000+ marine animals killed annually by plastic pollution, with polystyrene among the top contributors",
                 "Microplastics found in the Mariana Trench, the deepest point on Earth",
                 "Polystyrene absorbs and concentrates toxins from seawater",
                 "Fragments are ingested by marine life at every level of the food chain",
@@ -171,8 +171,8 @@ export default function EnvironmentalImpactPage() {
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 An estimated <strong className="text-foreground">100,000+ marine animals</strong> die each year
-                from plastic pollution, with polystyrene being a significant
-                contributor. Sea turtles mistake foam fragments for jellyfish,
+                from plastic ingestion and entanglement, with polystyrene being
+                one of the top contributors as the #2 most common beach debris item. Sea turtles mistake foam fragments for jellyfish,
                 seabirds feed small pieces to their chicks, and fish ingest
                 microplastic particles.
               </p>
