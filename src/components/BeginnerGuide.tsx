@@ -31,7 +31,7 @@ const steps: GuideStep[] = [
     title: "Identify Your Polystyrene",
     description: "Learn to spot the #6 recycling symbol",
     details:
-      "Look at the bottom of your container for a triangle with the number 6 inside. This identifies the item as polystyrene (PS). Common items include foam cups, takeout containers, egg cartons, and packaging peanuts. The two main types are EPS (expanded — white beady foam) and XPS (extruded — smooth, dense, often colored).",
+      "Look at the bottom of your container for a triangle with the number 6 inside. This identifies the item as polystyrene (PS). Common items include foam cups, takeout containers, egg cartons, and packaging peanuts. The two main types are EPS (expanded polystyrene, which is the white beady foam) and XPS (extruded polystyrene, which is smooth, dense, and often colored).",
     icon: <Search className="w-5 h-5" />,
     tip: 'Remember: "Styrofoam" is actually a brand name for XPS insulation, not all foam products!',
   },
@@ -40,7 +40,7 @@ const steps: GuideStep[] = [
     title: "Clean It",
     description: "Remove food residue with a quick rinse",
     details:
-      "Give your polystyrene containers a quick rinse to remove food residue. You don't need to scrub them spotless — just remove visible grease and food particles. Heavily contaminated items (like a foam plate covered in barbecue sauce) may be too dirty to recycle. Light residue from drinks is usually fine after a quick rinse.",
+      "Give your polystyrene containers a quick rinse to remove food residue. You do not need to scrub them spotless, just remove visible grease and food particles. Heavily contaminated items (like a foam plate covered in barbecue sauce) may be too dirty to recycle. Light residue from drinks is usually fine after a quick rinse.",
     icon: <Sparkles className="w-5 h-5" />,
     tip: "A 5-second rinse is usually enough. If it's covered in grease or paint, it's better to trash it.",
   },
@@ -58,7 +58,7 @@ const steps: GuideStep[] = [
     title: "Drop It Off",
     description: "Take your clean polystyrene to the recycling center",
     details:
-      "Bag your clean, dry polystyrene and bring it to the drop-off location. Break large pieces (like coolers) into smaller chunks for easier transport. Keep polystyrene separate from other recyclables — mixing it with paper or cans can contaminate the batch. Some facilities even have drive-through drop-off for convenience!",
+      "Bag your clean, dry polystyrene and bring it to the drop-off location. Break large pieces (like coolers) into smaller chunks for easier transport. Keep polystyrene separate from other recyclables because mixing it with paper or cans can contaminate the batch. Some facilities even have drive-through drop-off for convenience!",
     icon: <Recycle className="w-5 h-5" />,
     tip: "Pro tip: Save up polystyrene over a few weeks and make one trip instead of many small ones.",
   },

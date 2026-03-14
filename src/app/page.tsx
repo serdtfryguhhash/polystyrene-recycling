@@ -87,9 +87,18 @@ const quickLinks = [
 export default function Home() {
   return (
     <div>
-      {/* Hero Section */}
+      {/* Hero Section with Video Background */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald-950/80 via-background to-emerald-900/30" />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/videos/hero-bg.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-br from-emerald-950/90 via-background/80 to-emerald-900/50" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-emerald-500/10 via-transparent to-transparent" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36">
           <div className="text-center max-w-4xl mx-auto">
@@ -161,19 +170,6 @@ export default function Home() {
       {/* Beginner's Guide */}
       <BeginnerGuide />
 
-      {/* Fun Facts Carousel */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="text-center mb-10">
-          <h2 className="text-3xl font-bold text-foreground mb-3">
-            Did You Know?
-          </h2>
-          <p className="text-muted-foreground">
-            Surprising facts about polystyrene and recycling
-          </p>
-        </div>
-        <FunFactsCarousel facts={funFacts.slice(0, 6)} />
-      </section>
-
       {/* Video Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
         <div className="text-center mb-10">
@@ -235,6 +231,19 @@ export default function Home() {
             </div>
           </Link>
         </div>
+      </section>
+
+      {/* Fun Facts Carousel */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-bold text-foreground mb-3">
+            Did You Know?
+          </h2>
+          <p className="text-muted-foreground">
+            Surprising facts about polystyrene and recycling
+          </p>
+        </div>
+        <FunFactsCarousel facts={funFacts.slice(0, 6)} />
       </section>
 
       {/* Quick Links Grid */}

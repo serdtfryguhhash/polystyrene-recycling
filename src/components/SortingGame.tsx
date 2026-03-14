@@ -384,7 +384,7 @@ export default function SortingGame() {
                     {!a.correct && (
                       <span className="text-xs opacity-70">
                         {" "}
-                        — {a.item.isRecyclable ? "Recyclable" : "Not recyclable"}
+                        (actually {a.item.isRecyclable ? "recyclable" : "not recyclable"})
                       </span>
                     )}
                   </span>

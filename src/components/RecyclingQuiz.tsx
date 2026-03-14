@@ -160,7 +160,7 @@ const allQuestions: QuizQuestion[] = [
     ],
     correctIndex: 1,
     explanation:
-      "Chemical depolymerization breaks polystyrene down to its original styrene monomer, which can be repolymerized into food-safe material — a 2025 commercial milestone.",
+      "Chemical depolymerization breaks polystyrene down to its original styrene monomer, which can be repolymerized into food-safe material. This became a commercial milestone in 2025.",
     difficulty: "hard",
   },
   {
@@ -226,7 +226,7 @@ const allQuestions: QuizQuestion[] = [
     ],
     correctIndex: 1,
     explanation:
-      "EPS stands for Expanded Polystyrene — the white, beaded foam commonly used in cups, packaging, and insulation. It's made by expanding polystyrene beads with steam.",
+      "EPS stands for Expanded Polystyrene. It is the white, beaded foam commonly used in cups, packaging, and insulation. It is made by expanding polystyrene beads with steam.",
     difficulty: "easy",
   },
   {
